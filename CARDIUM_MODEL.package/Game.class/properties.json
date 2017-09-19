@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "CARDIUM_MODEL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rounds",
+		"player",
+		"state",
+		"dice",
+		"new",
+		"board",
+		"playerIndex",
+		"winner"
+	],
+	"name" : "Game",
+	"type" : "normal"
+}

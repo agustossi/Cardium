@@ -1,0 +1,3 @@
+action
+playedBy
+	^ player size.

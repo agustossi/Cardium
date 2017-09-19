@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "CARDIUM_MODEL",
+	"classinstvars" : [
+		"faces"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"value",
+		"faces"
+	],
+	"name" : "Dice",
+	"type" : "normal"
+}

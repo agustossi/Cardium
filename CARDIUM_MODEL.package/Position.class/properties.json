@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "CARDIUM_MODEL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"round",
+		"tile"
+	],
+	"name" : "Position",
+	"type" : "normal"
+}

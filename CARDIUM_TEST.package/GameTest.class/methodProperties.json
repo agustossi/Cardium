@@ -1,0 +1,12 @@
+{
+	"instance" : {
+		"testWhenRoundLowerThanOrEqualsToZeroErrorIsReturned" : "AgusTossi 9/19/2017 11:47",
+		"testPlayingUntilWinningWithOneDice" : "AgusTossi 9/19/2017 11:50",
+		"testSuccessOnGameCreation" : "sebastiancalderone 9/16/2017 19:01",
+		"testPlayingUntilWinningWithTwoDice" : "AgusTossi 9/19/2017 11:51",
+		"testWhenTimesToWinIsLowerThanZeroErrorOccurs" : "sebastiancalderone 9/16/2017 19:32",
+		"testPlayersAreCorrectedAddedToGame" : "sebastiancalderone 9/16/2017 18:43",
+		"testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded" : "sebastiancalderone 9/16/2017 23:33"
+	},
+	"class" : { }
+}

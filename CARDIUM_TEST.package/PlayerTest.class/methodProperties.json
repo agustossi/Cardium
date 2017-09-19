@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"testWhenPlayerCompletesARoundRoundSumsOne" : "sebastiancalderone 9/16/2017 20:07",
+		"testWhenPlayerisCreatedPositionisZero" : "sebastiancalderone 9/16/2017 21:38",
+		"testNameShouldntBeEmpty" : "sebastian 9/6/2017 21:02",
+		"testWhenPlayerisCreatedRoundIsZero" : "sebastian 9/9/2017 18:51",
+		"testWhenPlayerCompletesARoundThePositionIsUpdatedToTheRightPosition" : "sebastiancalderone 9/16/2017 21:38",
+		"testWhenIAskForPlayerNameIsReturned" : "sebastian 9/6/2017 20:50"
+	},
+	"class" : { }
+}
