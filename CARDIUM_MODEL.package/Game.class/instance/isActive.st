@@ -1,3 +1,3 @@
 testing
-isActive	
-	^ (state asSymbol == 'Active' asSymbol)
+isActive
+	^ state asSymbol  == 'Active' asSymbol

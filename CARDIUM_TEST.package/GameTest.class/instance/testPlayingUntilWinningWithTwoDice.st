@@ -1,17 +1,21 @@
 tests
 testPlayingUntilWinningWithTwoDice
 
-	| game seba board dice dice1 dice2 agus |
+	| game seba board dice dice1 dice2 agus totalPlayers |
 	seba:= Player named: 'sebastian'.
+	agus:= Player named: 'agustina'.
+	totalPlayers:= OrderedCollection new.
+	totalPlayers add: seba.
+	totalPlayers add: agus.
 	board:= Board ofSize: 20.
 	dice1:= Dice faces: 6.	
 	dice1 setValue: 1.
 	dice2:= Dice faces: 7.
 	dice2 setValue: 1.
 	dice:= Array with: dice1 with: dice2.
-   game := Game rounds: 1 createdBy: seba withThisBoard: board usingDice: dice.
-   agus:= Player named: 'agustina'.
-	game addPlayer: agus.	
+   game := Game rounds: 1 playedBy: totalPlayers withThisBoard: board usingDice: dice.
+   
+
 	self assert:  (game positionOf: seba) tile equals:0.
 	self assert: (game positionOf: agus) tile equals: 0.
 	self assert:  (game positionOf: seba) rounds equals:0.

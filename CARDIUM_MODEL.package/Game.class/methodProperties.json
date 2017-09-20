@@ -1,20 +1,21 @@
 {
 	"instance" : {
-		"createdBy" : "sebastiancalderone 9/16/2017 18:28",
-		"playedBy" : "sebastiancalderone 9/16/2017 18:46",
+		"createdBy" : "AgusTossi 9/19/2017 20:51",
 		"dice" : "sebastian 9/9/2017 19:30",
-		"winner" : "sebastiancalderone 9/16/2017 23:41",
+		"winner" : "AgusTossi 9/19/2017 21:30",
+		"nextTurn" : "AgusTossi 9/19/2017 21:27",
+		"numberOfPlayers" : "AgusTossi 9/19/2017 20:52",
+		"initializeRounds:initializePlayers:initializeBoard:initializeDice:" : "AgusTossi 9/19/2017 21:20",
 		"roundsToWin" : "sebastian 9/9/2017 19:04",
-		"nextTurn" : "sebastiancalderone 9/16/2017 23:42",
 		"positionOf:" : "sebastiancalderone 9/16/2017 21:40",
-		"initializeRounds:initializeCreator:initializeBoard:initializeDice:" : "AgusTossi 9/19/2017 11:44",
-		"addPlayer:" : "sebastiancalderone 9/16/2017 21:44",
-		"isActive" : "sebastiancalderone 9/16/2017 19:01",
-		"state" : "sebastian 9/9/2017 19:06",
+		"assertGameIsNotEnded" : "AgusTossi 9/19/2017 21:32",
+		"assertGameIsEnded" : "AgusTossi 9/19/2017 21:31",
+		"isActive" : "AgusTossi 9/19/2017 20:59",
 		"board" : "sebastian 9/9/2017 19:51",
+		"state" : "sebastian 9/9/2017 19:06",
 		"winner:" : "sebastiancalderone 9/16/2017 23:41"
 	},
 	"class" : {
-		"rounds:createdBy:withThisBoard:usingDice:" : "sebastiancalderone 9/16/2017 19:33"
+		"rounds:playedBy:withThisBoard:usingDice:" : "AgusTossi 9/19/2017 21:21"
 	}
 }

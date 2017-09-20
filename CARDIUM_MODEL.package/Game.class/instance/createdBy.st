@@ -1,3 +1,3 @@
 accessing
 createdBy
-	^ player at: 1. 
+	^ players at: 1

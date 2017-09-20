@@ -7,5 +7,5 @@ testWhenRoundLowerThanOrEqualsToZeroErrorIsReturned
 	dice1:= Dice faces: 6.
 	dice2:= Dice faces: 7.
 	dice:= Array with: dice1 with: dice2.
-	game:= Game rounds: 2 createdBy: player withThisBoard: board usingDice: dice.
-	self should: [ Game rounds: 0 createdBy: player withThisBoard: board usingDice: dice. ] raise: Error.
+	game:= Game rounds: 2 playedBy: player withThisBoard: board usingDice: dice.
+	self should: [ Game rounds: 0 playedBy: player withThisBoard: board usingDice: dice. ] raise: Error.
