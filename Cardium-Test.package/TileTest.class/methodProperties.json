@@ -1,0 +1,8 @@
+{
+	"instance" : {
+		"testEffectlesTileEffectAppliedToThisPlayerIsWorking" : "sebastian 10/1/2017 18:37",
+		"testMoonWalkTileEffectAppliedToThisPlayerIsWorking" : "sebastian 10/1/2017 18:51",
+		"testWormholeTileEffectAppliedToThisSetOfPlayersIsWorking" : "sebastian 10/1/2017 18:43"
+	},
+	"class" : { }
+}

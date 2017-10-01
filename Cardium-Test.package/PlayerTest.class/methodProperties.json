@@ -1,0 +1,7 @@
+{
+	"instance" : {
+		"testNameShouldntBeEmpty" : "sebastian 9/6/2017 21:02",
+		"testWhenIAskForPlayerNameIsReturned" : "sebastian 9/6/2017 20:50"
+	},
+	"class" : { }
+}
