@@ -1,8 +1,11 @@
 {
 	"instance" : {
-		"testEffectlesTileEffectAppliedToThisPlayerIsWorking" : "sebastian 10/1/2017 18:37",
-		"testMoonWalkTileEffectAppliedToThisPlayerIsWorking" : "sebastian 10/1/2017 18:51",
-		"testWormholeTileEffectAppliedToThisSetOfPlayersIsWorking" : "sebastian 10/1/2017 18:43"
+		"testWormholeTileEffectAppliedToThisSetOfPlayersIsWorking" : "sebastian 10/1/2017 19:23",
+		"testAtomicBombTileEffectAppliedToThisPlayerIsWorking" : "sebastian 10/1/2017 20:44",
+		"testSpeedUpTileEffectAppliedToThisSetOfPlayersIsWorking" : "sebastian 10/1/2017 19:44",
+		"testEffectlesTileEffectAppliedToThisPlayerIsWorking" : "sebastian 10/1/2017 19:16",
+		"testMoonWalkTileEffectAppliedToThisPlayerIsWorking" : "sebastian 10/1/2017 20:45",
+		"testTimeMachineTileEffectAppliedToThisPlayerIsWorking" : "sebastian 10/1/2017 20:33"
 	},
 	"class" : { }
 }
