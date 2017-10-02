@@ -1,7 +1,8 @@
 {
 	"instance" : {
-		"testWhenAskedNumberOfTilesTheValueIsReturned" : "sebastian 9/9/2017 18:46",
-		"testWhenSizeIsZeroOrLowerAnErrorOccurs" : "sebastiancalderone 9/16/2017 19:26"
+		"testWhenSizeIsZeroOrLowerAnErrorOccurs" : "sebastiancalderone 9/16/2017 19:26",
+		"testWhenAskedNumberOfTilesTheValueIsReturned" : "sebastian 10/1/2017 21:22",
+		"testWhenAskedForCertainTileGivenTileIsReturned" : "sebastian 10/1/2017 21:27"
 	},
 	"class" : { }
 }
