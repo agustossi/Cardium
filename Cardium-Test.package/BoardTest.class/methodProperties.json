@@ -1,0 +1,7 @@
+{
+	"instance" : {
+		"testWhenAskedNumberOfTilesTheValueIsReturned" : "sebastian 9/9/2017 18:46",
+		"testWhenSizeIsZeroOrLowerAnErrorOccurs" : "sebastiancalderone 9/16/2017 19:26"
+	},
+	"class" : { }
+}
