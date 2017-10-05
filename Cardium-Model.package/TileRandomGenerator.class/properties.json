@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "Tile",
+	"super" : "Object",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "Wormhole",
+	"name" : "TileRandomGenerator",
 	"type" : "normal"
 }

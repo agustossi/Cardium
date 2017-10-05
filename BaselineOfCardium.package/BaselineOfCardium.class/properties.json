@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "Tile",
-	"category" : "Cardium-Model",
+	"super" : "BaselineOf",
+	"category" : "BaselineOfCardium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "Wormhole",
+	"name" : "BaselineOfCardium",
 	"type" : "normal"
 }

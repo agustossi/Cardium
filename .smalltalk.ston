@@ -1,0 +1,19 @@
+SmalltalkCISpec {
+ #loading :[
+SCIMetacelloLoadSpec {
+#baseline : 'Cardium',
+#load : ['Development'],
+#platforms :  [#pharo]
+}
+],
+#testing : {
+#coverage : {
+
+#packages  :['Cardium*']
+},
+#include : {
+
+#packages : ['Cardium-Test']
+}
+}
+}
