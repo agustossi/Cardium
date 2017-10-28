@@ -5,11 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"totalTiles",
-		"lastTiles",
-		"boardSize"
-	],
-	"name" : "Position",
+	"instvars" : [ ],
+	"name" : "TileGenerator",
 	"type" : "normal"
 }

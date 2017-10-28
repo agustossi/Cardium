@@ -1,15 +1,17 @@
 {
 	"instance" : {
-		"updateRoundsOnABoardOf:" : "sebastian 10/1/2017 20:43",
-		"intializePosition" : "sebastian 10/1/2017 20:34",
-		"tile" : "sebastiancalderone 9/16/2017 21:12",
 		"sumOfTiles" : "sebastian 10/1/2017 18:13",
-		"lastTiles" : "sebastian 10/1/2017 20:31",
+		"updateRoundsOnABoardOf:" : "SebastianCalderone 10/28/2017 12:06",
+		"intializePosition" : "sebastian 10/1/2017 20:34",
+		"tile" : "SebastianCalderone 10/28/2017 12:48",
 		"initializeWithThisSumOfTiles:" : "sebastian 10/1/2017 20:41",
-		"rounds" : "sebastiancalderone 9/16/2017 21:14"
+		"lastTiles" : "SebastianCalderone 10/28/2017 13:04",
+		"initializeWith:from:onABoardOf:" : "SebastianCalderone 10/28/2017 12:35",
+		"rounds" : "SebastianCalderone 10/28/2017 12:17"
 	},
 	"class" : {
 		"withThisSumOfTiles:" : "sebastian 10/1/2017 18:24",
+		"moving:from:onABoardOf:" : "SebastianCalderone 10/28/2017 12:14",
 		"create" : "sebastiancalderone 9/16/2017 21:11"
 	}
 }

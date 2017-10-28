@@ -1,10 +1,12 @@
 tests
 testEffectlesTileEffectAppliedToThisPlayerIsWorking
 
-	| anEffectlesTile game seba board dice dice1 totalPlayers |
+	| anEffectlesTile game seba board dice dice1 totalPlayers boardGenerator |
 	
 	seba := Player named: 'sebastian'.
-	board := Board ofSize: 10.
+	anEffectlesTile := Effectles new.
+	boardGenerator := TileFixedGenerator using: anEffectlesTile.
+	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	dice1 := Dice faces: 6.
 	dice1 setValue: 1.
 	dice := Array with: dice1.
@@ -12,7 +14,7 @@ testEffectlesTileEffectAppliedToThisPlayerIsWorking
 	totalPlayers add: seba.
 	game := Game	 rounds: 1 playedBy: totalPlayers withThisBoard: board usingDice: dice.
 	
-	anEffectlesTile := Effectles new.
+	
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tile equals:0.
 	anEffectlesTile appliesEffectOn: game allPlayersPositions playing: seba.

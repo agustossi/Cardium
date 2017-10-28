@@ -1,15 +1,13 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "Object",
+	"super" : "TileGenerator",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"totalTiles",
-		"lastTiles",
-		"boardSize"
+		"tileToBeUsed"
 	],
-	"name" : "Position",
+	"name" : "TileFixedGenerator",
 	"type" : "normal"
 }
