@@ -1,3 +1,4 @@
 accessing
 rounds
-	^round.
+	^ (totalTiles // boardSize).
+	

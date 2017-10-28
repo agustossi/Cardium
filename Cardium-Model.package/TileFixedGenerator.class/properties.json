@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "Play",
+	"super" : "TileGenerator",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "ThrowDice",
+	"instvars" : [
+		"tileToBeUsed"
+	],
+	"name" : "TileFixedGenerator",
 	"type" : "normal"
 }

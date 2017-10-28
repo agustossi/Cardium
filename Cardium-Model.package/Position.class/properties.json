@@ -6,10 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"round",
-		"tile",
 		"totalTiles",
-		"lastTiles"
+		"lastTiles",
+		"boardSize"
 	],
 	"name" : "Position",
 	"type" : "normal"
