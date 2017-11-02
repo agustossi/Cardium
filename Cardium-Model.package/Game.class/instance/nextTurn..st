@@ -7,6 +7,6 @@ nextTurn: aPlayer
 	movesToBeMade := dice sumNumbers: [ :d | d faceValue ].	
 	playerPositions at: aPlayer name put: (self position: movesToBeMade).
 	"anEffectlesTile appliesEffectOn: game allPlayersPositions playing: seba."
-	"(board tileAtPosition: ((playerPositions at: aPlayer name) tile)) appliesEffectOn: playerPositions playing: aPlayer."
+	"(board tileAtPosition: ((playerPositions at: aPlayer name) tile)) appliesEffectOn: playerPositions playing:      aPlayer."
 	self keepingTrackOfPlayerIndex.
 	self isWinner: aPlayer

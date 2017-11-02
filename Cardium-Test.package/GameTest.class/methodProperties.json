@@ -6,7 +6,7 @@
 		"testGameCannotBePlayedWhenStateIsntActive" : "SebastianCalderone 11/2/2017 18:38",
 		"testPlayerCannotPlayIfItsNotHisTurn" : "SebastianCalderone 10/28/2017 13:42",
 		"testPlayingUntilWinningWithTwoDice" : "SebastianCalderone 10/28/2017 13:42",
-		"testSuccessOnGameCreation" : "SebastianCalderone 10/28/2017 13:42",
+		"testSuccessOnGameCreation" : "SebastianCalderone 11/2/2017 19:27",
 		"testPlayersAreCorrectedAddedToGame" : "SebastianCalderone 10/28/2017 13:42",
 		"testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded" : "SebastianCalderone 10/28/2017 13:42"
 	},

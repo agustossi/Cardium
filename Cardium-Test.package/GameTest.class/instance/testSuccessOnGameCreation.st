@@ -4,7 +4,7 @@ testSuccessOnGameCreation
 	player := Player named: 'pepito'.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: player.
-	board := Board ofSize: 10 withThisGenerator: TileRandomGeneratorNew.
+	board := Board ofSize: 10 withThisGenerator: TileRandomGenerator new.
 	dice1 := Dice faces: 6.
 	dice2 := Dice faces: 7.
 	dice := Array with: dice1 with: dice2.
@@ -15,7 +15,6 @@ testSuccessOnGameCreation
 		usingDice: dice.
 	self
 		assert: game isActive;
-		assert: game createdBy name equals: 'pepito';
 		assert: game dice equals: dice;
 		assert: game board equals: board;
 		assert: game roundsToWin equals: 2
