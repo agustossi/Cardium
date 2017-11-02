@@ -1,6 +1,7 @@
 {
 	"instance" : {
-		"testWhenReceivingAnEmptyPositionHistoryAPositionAndABoardSizeTheCorrectPositionIsReturned" : "SebastianCalderone 11/2/2017 10:41"
+		"testWhenReceivingAnEmptyPositionHistoryAPositionAndABoardSizeTheCorrectPositionIsReturned" : "SebastianCalderone 11/2/2017 11:26",
+		"testWhenReceivingAnEmptyPositionHistoryAPositionAndABoardSizeTheCorrectRoundIsReturned" : "SebastianCalderone 11/2/2017 11:34"
 	},
 	"class" : { }
 }
