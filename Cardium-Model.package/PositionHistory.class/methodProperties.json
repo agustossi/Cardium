@@ -1,0 +1,16 @@
+{
+	"instance" : {
+		"updateRoundsOnABoardOf:" : "SebastianCalderone 11/2/2017 09:51",
+		"initializeWith:adding:" : "SebastianCalderone 11/2/2017 10:01",
+		"boardSize" : "SebastianCalderone 11/2/2017 09:51",
+		"tile" : "SebastianCalderone 11/2/2017 09:51",
+		"sumOfTiles" : "SebastianCalderone 11/2/2017 09:51",
+		"lastTiles" : "SebastianCalderone 11/2/2017 09:51",
+		"initializeWith:from:onABoardOf:" : "SebastianCalderone 11/2/2017 09:51",
+		"rounds" : "SebastianCalderone 11/2/2017 09:51"
+	},
+	"class" : {
+		"moving:from:onABoardOf:" : "SebastianCalderone 11/2/2017 09:51",
+		"having:adding:" : "SebastianCalderone 11/2/2017 09:59"
+	}
+}

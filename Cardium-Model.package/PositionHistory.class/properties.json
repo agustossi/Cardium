@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Cardium-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"totalTiles",
+		"lastTiles",
+		"boardSize",
+		"history"
+	],
+	"name" : "PositionHistory",
+	"type" : "normal"
+}

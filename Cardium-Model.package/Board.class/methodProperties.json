@@ -1,13 +1,11 @@
 {
 	"instance" : {
-		"initializeBoardSize:" : "SebastianCalderone 10/28/2017 11:20",
 		"initializeBoardSize:initilizeGenerator:" : "SebastianCalderone 10/28/2017 13:34",
 		"numberOfTiles" : "sebastian 9/9/2017 18:46",
 		"tileAtPosition:" : "sebastian 10/1/2017 21:26"
 	},
 	"class" : {
-		"ofSize:withThisGenerator:" : "SebastianCalderone 10/28/2017 13:32",
-		"ofSize:" : "sebastiancalderone 9/16/2017 19:29",
+		"ofSize:withThisGenerator:" : "SebastianCalderone 10/28/2017 14:08",
 		"assertBoardSizeIsGreaterThanZero:" : "sebastiancalderone 9/16/2017 19:29"
 	}
 }

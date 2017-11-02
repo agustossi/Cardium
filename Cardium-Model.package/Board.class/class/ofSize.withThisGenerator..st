@@ -1,3 +1,4 @@
-as yet unclassified
-ofSize: size withThisGenerator: aTileFixedGenerator 
-	^ self new initializeBoardSize: size initilizeGenerator: aTileFixedGenerator.
+instance creation
+ofSize: size withThisGenerator: aTileGenerator
+	self assertBoardSizeIsGreaterThanZero: size.
+	^ self new initializeBoardSize: size initilizeGenerator: aTileGenerator 
