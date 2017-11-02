@@ -2,7 +2,7 @@ tests
 testWhenReceivingAnEmptyPositionHistoryAPositionAndABoardSizeTheCorrectPositionIsReturned
 	
 	|positionController aHistory position anEffectlesTile boardGenerator board |
-	positionController := PositionController new.
+	positionController := PositionCalculator new.
 	aHistory := OrderedCollection new.
 	position:= 1.
 	boardGenerator := TileFixedGenerator using: anEffectlesTile.
