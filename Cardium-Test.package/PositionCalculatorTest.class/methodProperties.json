@@ -1,6 +1,8 @@
 {
 	"instance" : {
-		"testWhenCalculatingToMoveOneTileFromPositionZeroTileIsOneSumOfTilesIsOneAndRoundIsZero" : "SebastianCalderone 11/2/2017 19:08"
+		"testWhenComplitingARoundRoundIsCalculatedCorrectly" : "SebastianCalderone 11/2/2017 19:14",
+		"testWhenGoingBackwardsAfterCompletingARoundTheRoundIsDecreasedInOneIfTilePositionIsLowerThanBoardSize" : "SebastianCalderone 11/2/2017 19:16",
+		"testWhenCalculatingToMoveOneTileFromPositionZeroTileIsOneSumOfTilesIsOneAndRoundIsZero" : "SebastianCalderone 11/2/2017 19:12"
 	},
 	"class" : { }
 }

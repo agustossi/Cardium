@@ -4,7 +4,7 @@ calculateNewPositionUsing: currentPosition inThis: aBoard havingThisNew: positio
 	| boardSize newPositionValue |
 	boardSize := aBoard numberOfTiles.
 	newPositionValue := position + currentPosition.
-	newPositionValue%boardSize==0 ifTrue:[^ 1]		
+	newPositionValue%boardSize==0 ifTrue:[^ boardSize]		
 	ifFalse:[^ (newPositionValue % boardSize)] 
 
 

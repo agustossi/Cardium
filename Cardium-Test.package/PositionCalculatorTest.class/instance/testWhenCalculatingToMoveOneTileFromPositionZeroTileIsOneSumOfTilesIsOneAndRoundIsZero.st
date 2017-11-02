@@ -8,5 +8,5 @@ testWhenCalculatingToMoveOneTileFromPositionZeroTileIsOneSumOfTilesIsOneAndRound
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.	
 	self assert: (positionCalculator calculateNewPositionUsing: 0 havingThisNew: 1) equals: 1;
 		  assert: (positionCalculator calculateNewPositionUsing: 0 inThis: board  havingThisNew: 1) equals: 1;
-		  assert: (positionCalculator calculateNewRoundUsing: 0 inThis: board) equals: 0.
+		  assert: (positionCalculator calculateNewRoundUsing: 1 inThis: board) equals: 0.
 	 
