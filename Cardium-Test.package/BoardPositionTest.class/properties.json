@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PositionControllerTest",
+	"name" : "BoardPositionTest",
 	"type" : "normal"
 }

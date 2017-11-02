@@ -2,14 +2,18 @@
 	"commentStamp" : "<historical>",
 	"super" : "Object",
 	"category" : "Cardium-Model",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"tile",
+		"sumOfTiles",
+		"round"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"totalTiles",
-		"lastTiles",
-		"boardSize"
+		"tile",
+		"round",
+		"sumOfTiles"
 	],
-	"name" : "Position",
+	"name" : "BoardPosition",
 	"type" : "normal"
 }

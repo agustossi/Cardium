@@ -16,11 +16,5 @@ Public API and Key Messages
  
 Internal Representation and Key Implementation Points.
 
-    Instance Variables
-	boardSize:		<Object>
-	history:		<Object>
-	lastTiles:		<Object>
-	totalTiles:		<Object>
-
 
     Implementation Points

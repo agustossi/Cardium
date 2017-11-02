@@ -7,4 +7,7 @@ initializeRounds: aRound initializePlayers: somePlayers initializeBoard: aBoard 
 	state := 'Active'.
 	playerIndex := 1.
 	playerPositions:= Dictionary new.	
-	players do: [:player | playerPositions at:(player name) put: (Position moving: 0 from: 0 onABoardOf: (board numberOfTiles )) ]
+	players do: [:player | playerPositions at:(player name) put: 
+	(PositionHistory having: (OrderedCollection new) adding: Position  ) ]
+	
+	"players do: [:player | playerPositions at:(player name) put: (Position moving: 0 from: 0 onABoardOf: (board numberOfTiles )) ]"
