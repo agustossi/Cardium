@@ -1,11 +1,17 @@
 as yet unclassified
 calculateNewPositionUsing: currentPosition inThis: aBoard havingThisNew: position
-
-	| boardSize newPositionValue |
-	boardSize := aBoard numberOfTiles.
-	newPositionValue := position + currentPosition.
-	newPositionValue%boardSize==0 ifTrue:[^ boardSize]		
-	ifFalse:[^ (newPositionValue % boardSize)] 
+	
+	
+	|oldTile oldSumOfTiles newTile newSumOfTiles newRound|
+	oldTile := currentPosition tiles.
+	oldSumOfTiles := currentPosition totalTiles.	
+	
+	newTile := self  calculateNewTileUsing: oldTile inThis: aBoard  havingThisNew: position.
+	newSumOfTiles:= self calculateNewSumOfTilesUsing: oldSumOfTiles havingThisNew: position.
+	newRound:= self calculateNewRoundUsing: newSumOfTiles inThis: aBoard.
+	
+	^ (BoardPosition tile: newTile totalTiles: newSumOfTiles round: newRound).
+	
 
 
    

@@ -3,7 +3,7 @@ testPlayerCannotPlayIfItsNotHisTurn
 	| game seba board dice dice1 agus totalPlayers |
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
-	board := Board ofSize: 10 withThisGenerator: TileRandomGeneratorNew.
+	board := Board ofSize: 10 withThisGenerator: TileRandomGenerator new.
 	dice1 := Dice faces: 6.
 	dice1 setValue: 1.
 	dice := Array with: dice1.

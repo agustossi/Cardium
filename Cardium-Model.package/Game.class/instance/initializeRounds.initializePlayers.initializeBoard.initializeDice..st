@@ -6,5 +6,6 @@ initializeRounds: aRound initializePlayers: somePlayers initializeBoard: aBoard 
 	dice := aDice.
 	state := 'Active'.
 	playerIndex := 1.
+	positionCalculator:= PositionCalculator new.
 	playerPositions := Dictionary new.
 	self playersPositionInizialization.

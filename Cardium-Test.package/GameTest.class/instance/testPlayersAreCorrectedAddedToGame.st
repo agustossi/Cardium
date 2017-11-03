@@ -8,7 +8,7 @@ testPlayersAreCorrectedAddedToGame
 	totalPlayers add: gameCreator.
 	totalPlayers add: player1.
 	totalPlayers add: player2.
-	board := Board ofSize: 10 withThisGenerator: TileRandomGeneratorNew.
+	board := Board ofSize: 10 withThisGenerator: TileRandomGenerator new.
 	dice1 := Dice faces: 6.
 	dice2 := Dice faces: 7.
 	dice := Array with: dice1 with: dice2.

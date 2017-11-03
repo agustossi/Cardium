@@ -4,7 +4,7 @@ testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded
 	player := Player named: 'pepito'.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: player.
-	board := Board ofSize: 5 withThisGenerator: TileRandomGeneratorNew.
+	board := Board ofSize: 5 withThisGenerator: TileRandomGenerator new.
 	dice := Array with: (Dice faces: 6).
 	(dice at: 1) setValue: 6.
 	game := Game

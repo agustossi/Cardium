@@ -13,7 +13,8 @@
 		"board",
 		"playerIndex",
 		"winner",
-		"playerPositions"
+		"playerPositions",
+		"positionCalculator"
 	],
 	"name" : "Game",
 	"type" : "normal"
