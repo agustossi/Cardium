@@ -6,6 +6,7 @@ nextTurn: aPlayer
 	movesToBeMade := 0.
 	movesToBeMade := dice sumNumbers: [ :d | d faceValue ].	
 	self  playerHistoryOf: aPlayer updatedWith: movesToBeMade.
+	self  tileEffectAppliedTo: aPlayer.
 	"playerPositions at: aPlayer name put: (self position: movesToBeMade).
 	anEffectlesTile appliesEffectOn: game allPlayersPositions playing: seba."
 	"(board tileAtPosition: ((playerPositions at: aPlayer name) tile)) appliesEffectOn: playerPositions playing:      aPlayer."
