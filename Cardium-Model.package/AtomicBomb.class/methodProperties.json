@@ -1,6 +1,7 @@
 {
 	"instance" : {
-		"appliesEffectOn:playing:" : "SebastianCalderone 11/1/2017 20:54"
+		"appliesEffectTo:on:" : "SebastianCalderone 11/5/2017 12:44",
+		"appliesEffectOn:playing:" : "SebastianCalderone 11/4/2017 13:31"
 	},
 	"class" : { }
 }

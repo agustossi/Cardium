@@ -15,13 +15,13 @@ testAtomicBombTileEffectAppliedToThisPlayerIsWorking
 	game := Game rounds: 1 playedBy: totalPlayers withThisBoard: board usingDice: dice.
 	
 	self assert: (game positionOf: seba) rounds equals: 0.
-	self assert: (game positionOf: seba) tile equals: 0.
+	self assert: (game positionOf: seba) tiles equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.
-	self assert: (game positionOf: agus) tile equals: 0.
+	self assert: (game positionOf: agus) tiles equals: 0.
 	game nextTurn: seba.
 	game nextTurn: agus.
 	self assert: (game positionOf: seba) rounds equals: 0.
-	self assert: (game positionOf: seba) tile equals: 0.
+	self assert: (game positionOf: seba) tiles equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.
-	self assert: (game positionOf: agus) tile equals: 0.
+	self assert: (game positionOf: agus) tiles equals: 0.
 	

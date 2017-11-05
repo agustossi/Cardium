@@ -4,7 +4,7 @@ nextTurn: aPlayer
 	self assertGameIsNotEnded.
 	self assertIsTheTurnof: aPlayer.
 	movesToBeMade := 0.
-	movesToBeMade := dice sumNumbers: [ :d | d faceValue ].	
+	movesToBeMade := dice sumNumbers: [ :d | d faceValue ].		
 	self  playerHistoryOf: aPlayer updatedWith: movesToBeMade.
 	self  tileEffectAppliedTo: aPlayer.
 	"playerPositions at: aPlayer name put: (self position: movesToBeMade).

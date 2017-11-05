@@ -1,10 +1,12 @@
 tests
 testPlayingUntilWinningWithOneDice
-	| game seba board dice dice1 agus totalPlayers |
+	| game seba board dice dice1 agus totalPlayers aEffectlesTile boardGenerator |
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
-	board := Board ofSize: 10 withThisGenerator: TileRandomGenerator new.
-	dice1 := Dice faces: 6.
+	aEffectlesTile:= Effectles new.
+	boardGenerator := TileFixedGenerator using: aEffectlesTile.
+	board := Board ofSize: 10 withThisGenerator: boardGenerator.
+	dice1:= Dice faces: 6.
 	dice1 setValue: 1.
 	dice := Array with: dice1.
 	totalPlayers := OrderedCollection new.
