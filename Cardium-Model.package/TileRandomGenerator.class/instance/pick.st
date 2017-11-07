@@ -1,6 +1,6 @@
 as yet unclassified
 pick
-	| tilesToPick anEffectlesTile anAtomicBombTile aMoonWalkTile aWormHoleTile aSpeedUpTile aTimeMachineTile aRandomGenerator |
+	| tilesToPick anEffectlesTile anAtomicBombTile aMoonWalkTile aWormHoleTile aSpeedUpTile aTimeMachineTile  |
 	tilesToPick:= OrderedCollection new.
 	
 	anEffectlesTile:= Effectles new.
@@ -8,8 +8,7 @@ pick
 	aMoonWalkTile:= MoonWalk new.
 	aWormHoleTile:= Wormhole new.
 	aSpeedUpTile:=SpeedUp new.
-	aTimeMachineTile:=TimeMachine new.
-	aRandomGenerator:= Random new.
+	aTimeMachineTile:=TimeMachine new.	
 	
 	1 to: 40 do: [:index | tilesToPick add: anEffectlesTile ]. 
 	41 to: 42 do: [:index | tilesToPick add: anAtomicBombTile ].

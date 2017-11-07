@@ -1,4 +1,4 @@
 accessing
-faces: numberOfFaces
-	self assertShouldBeGreaterThanZero: numberOfFaces.
-	^ self new initialize: numberOfFaces
+faces: aNumberOfFaces
+	self assertShouldBeGreaterThanZero: aNumberOfFaces.
+	^ (self faces: aNumberOfFaces rollingFrom: (Random new)).

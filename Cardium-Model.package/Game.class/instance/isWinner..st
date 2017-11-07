@@ -1,4 +1,6 @@
 accessing
 isWinner: aPlayer	
-	
-	(((playerPositions at: (aPlayer name)) rounds) >= rounds) ifTrue: [ state := 'Ended'. winner:=aPlayer ]
+	| positionsHistory lastIndex |
+	positionsHistory:=playerPositions at: (aPlayer).
+	lastIndex:= positionsHistory size. 	
+   (((positionsHistory at: lastIndex) rounds) >= rounds) ifTrue: [ state := 'Ended'. winner:=aPlayer ]

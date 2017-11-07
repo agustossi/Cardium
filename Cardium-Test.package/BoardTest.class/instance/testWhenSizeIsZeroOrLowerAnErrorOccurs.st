@@ -1,4 +1,6 @@
 tests
 testWhenSizeIsZeroOrLowerAnErrorOccurs
-	
-	self should: [ Board ofSize: 0 ] raise: Error description: 'board size must be greater than 0'.
+	self
+		should: [ Board ofSize: 0 withThisGenerator: TileRandomGenerator new]
+		raise: Error
+		description: 'board size must be greater than 0'

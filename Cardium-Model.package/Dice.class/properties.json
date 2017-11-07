@@ -9,7 +9,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"value",
-		"faces"
+		"faces",
+		"numberGenerator"
 	],
 	"name" : "Dice",
 	"type" : "normal"

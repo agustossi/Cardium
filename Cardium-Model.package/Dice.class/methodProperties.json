@@ -1,14 +1,13 @@
 {
 	"instance" : {
-		"numberOfFaces" : "sebastiancalderone 9/16/2017 17:27",
-		"initialize:" : "sebastiancalderone 9/16/2017 17:26",
-		"setValue:" : "sebastiancalderone 9/16/2017 23:12",
-		"faceValue" : "sebastiancalderone 9/16/2017 23:27",
-		"throwDice" : "sebastiancalderone 9/16/2017 17:38",
-		"assertMustBeInGivenRange:" : "sebastiancalderone 9/16/2017 23:12"
+		"initializeWithFaces:rollingFrom:" : "SebastianCalderone 11/7/2017 12:24",
+		"assertMustBeInGivenRange:" : "sebastiancalderone 9/16/2017 23:12",
+		"faceValue" : "SebastianCalderone 11/7/2017 13:26",
+		"numberOfFaces" : "sebastiancalderone 9/16/2017 17:27"
 	},
 	"class" : {
+		"faces:rollingFrom:" : "SebastianCalderone 11/7/2017 13:24",
 		"assertShouldBeGreaterThanZero:" : "AgusTossi 9/19/2017 11:34",
-		"faces:" : "sebastiancalderone 9/16/2017 17:35"
+		"faces:" : "SebastianCalderone 11/7/2017 13:24"
 	}
 }
