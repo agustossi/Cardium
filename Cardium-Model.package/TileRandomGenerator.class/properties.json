@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"aRandomGenerator"
+	],
 	"name" : "TileRandomGenerator",
 	"type" : "normal"
 }
