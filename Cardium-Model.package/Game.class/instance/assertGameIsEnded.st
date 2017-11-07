@@ -1,4 +1,4 @@
 action
 assertGameIsEnded
-	state asSymbol == 'Active' asSymbol
-		ifTrue: [ Error signal: 'There isnt a winner yet' ]
+	state isEnded
+		ifFalse: [ GameError signal: 'There isnt a winner yet' ]
