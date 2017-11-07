@@ -3,10 +3,10 @@
 		"positionOf:" : "SebastianCalderone 11/5/2017 15:41",
 		"isActive" : "AgusTossi 9/19/2017 20:59",
 		"players" : "SebastianCalderone 11/5/2017 16:36",
-		"assertGameIsEnded" : "AgusTossi 9/19/2017 21:31",
+		"assertGameIsEnded" : "agustossi 11/7/2017 19:19",
 		"initializeRounds:initializePlayers:initializeBoard:initializeDice:" : "SebastianCalderone 11/2/2017 19:35",
-		"assertIsTheTurnof:" : "SebastianCalderone 11/7/2017 16:39",
-		"assertGameIsNotEnded" : "AgusTossi 9/19/2017 21:32",
+		"assertIsTheTurnof:" : "agustossi 11/7/2017 19:31",
+		"assertGameIsNotEnded" : "agustossi 11/7/2017 19:31",
 		"move:tiles:" : "SebastianCalderone 11/7/2017 10:48",
 		"roundsToWin" : "sebastian 9/9/2017 19:04",
 		"allPlayersPositions" : "sebastian 10/1/2017 19:12",
@@ -24,6 +24,6 @@
 		"keepingTrackOfPlayerIndex" : "sebastian 10/1/2017 17:13"
 	},
 	"class" : {
-		"rounds:playedBy:withThisBoard:usingDice:" : "AgusTossi 9/19/2017 21:21"
+		"rounds:playedBy:withThisBoard:usingDice:" : "agustossi 11/7/2017 19:34"
 	}
 }

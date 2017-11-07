@@ -2,5 +2,4 @@ tests
 testWhenSizeIsZeroOrLowerAnErrorOccurs
 	self
 		should: [ Board ofSize: 0 withThisGenerator: TileRandomGenerator new]
-		raise: Error
-		description: 'board size must be greater than 0'
+		raise: GameError withExceptionDo: [:signal | self assert: signal messageText equals: 'board size must be greater than 0']..

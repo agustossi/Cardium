@@ -19,4 +19,4 @@ testWinnerCantBeReturnedWhilePlaying
 		withThisBoard: board
 		usingDice: dice.
 	game nextTurn: player0.
-	self should: [ game winnerOfTheGame ] raise: Error
+	self should: [ game winnerOfTheGame ] raise: GameError withExceptionDo: [:signal | self assert: signal messageText equals: 'There isnt a winner yet'].

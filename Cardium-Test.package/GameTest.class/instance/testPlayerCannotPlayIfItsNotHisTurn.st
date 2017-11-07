@@ -15,4 +15,4 @@ testPlayerCannotPlayIfItsNotHisTurn
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice.
-	self should: [ game nextTurn: agus ] raise: Error
+	self should: [ game nextTurn: agus ] raise: GameError withExceptionDo: [:signal | self assert: signal messageText equals: 'It is not your turn'].

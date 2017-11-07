@@ -12,4 +12,4 @@ testWhenTimesToWinIsLowerThanZeroErrorOccurs
 				playedBy: player
 				withThisBoard: board
 				usingDice: dice ]
-		raise: Error
+		raise: GameError

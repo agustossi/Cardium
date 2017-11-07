@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "TestCase",
-	"category" : "Cardium-Test",
+	"super" : "Exception",
+	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PositionTest",
+	"name" : "GameError",
 	"type" : "normal"
 }
