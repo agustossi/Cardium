@@ -1,6 +1,6 @@
 tests
 testGameCannotBePlayedWhenStateIsntActive
-	| game board dice dice1 totalPlayers pepito seba agus generator|
+	| game board dice dice1 totalPlayers pepito seba agus generator boardGenerator aEffectlesTile |
 	pepito := Player named: 'Pepito'.
 	seba := Player named: 'Agus'.
 	agus := Player named: 'Seba'.
@@ -8,10 +8,13 @@ testGameCannotBePlayedWhenStateIsntActive
 	totalPlayers add: pepito.
 	totalPlayers add: seba.
 	totalPlayers add: agus.
-	board := Board ofSize: 4 withThisGenerator: TileRandomGenerator new.
-	generator:= FixedNumberGenerator startFrom:4.
+	aEffectlesTile := Effectles new.
+	boardGenerator := TileFixedGenerator using: aEffectlesTile.
+	board := Board ofSize: 10 withThisGenerator: boardGenerator.
+	generator:= FixedNumberGenerator startFrom:6.
 	dice1 := Dice faces: 6 rollingFrom: generator.
 	dice := Array with: dice1.	
 	game := Game 	rounds: 1 	playedBy: totalPlayers 	withThisBoard: board	usingDice: dice.
 	game nextTurn: pepito.
-	self should: [ game nextTurn: seba ] raise: Error
+	self should: [ game nextTurn: agus ] raise: Error
+	

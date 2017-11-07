@@ -1,10 +1,12 @@
 tests
 testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded
-	| game player board dice totalPlayers generator dice1|
+	| game player board dice totalPlayers generator dice1 anEffectlesTile|
 	player := Player named: 'pepito'.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: player.
-	board := Board ofSize: 5 withThisGenerator: TileRandomGenerator new.
+	anEffectlesTile := Effectles new.
+	generator := TileFixedGenerator using: anEffectlesTile .
+	board := Board ofSize: 5 withThisGenerator: generator.
 	generator:= FixedNumberGenerator startFrom:5.
 	dice1 := Dice faces: 6 rollingFrom: generator.
 	dice := Array with: dice1.

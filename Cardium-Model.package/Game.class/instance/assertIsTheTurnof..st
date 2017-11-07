@@ -1,4 +1,4 @@
 action
 assertIsTheTurnof: aPlayer
-	aPlayer name asSymbol == (players at: playerIndex) name asSymbol
+	aPlayer == (players at: playerIndex)
 		ifFalse: [ Error signal: 'It is not your turn' ]
