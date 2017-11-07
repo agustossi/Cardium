@@ -1,5 +1,5 @@
 as yet unclassified
-playerHistoryOf: aPlayer updatedWith: movesToBeMade 
+move: aPlayer tiles: movesToBeMade 
 	
 	| positionsHistory lastIndex currentPosition |
 	positionsHistory := playerPositions at:(aPlayer).		

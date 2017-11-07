@@ -1,3 +1,3 @@
 as yet unclassified
 appliesEffectTo: aPlayer on: aGame 
-	aGame playerHistoryOf: aPlayer updatedWith: -4
+	aGame move: aPlayer tiles: -4

@@ -1,11 +1,11 @@
 action
 nextTurn: aPlayer
-	| movesToBeMade |
+	| aNumberOfTiles |
 	self assertGameIsNotEnded.
 	self assertIsTheTurnof: aPlayer.
-	movesToBeMade := 0.
-	movesToBeMade := dice sumNumbers: [ :d | d faceValue ].		
-	self  playerHistoryOf: aPlayer updatedWith: movesToBeMade.
+	aNumberOfTiles := 0.
+	aNumberOfTiles := dice sumNumbers: [ :d | d faceValue ].		
+	self  move: aPlayer tiles: aNumberOfTiles.
 	self  tileEffectAppliedTo: aPlayer.
 	"playerPositions at: aPlayer name put: (self position: movesToBeMade).
 	anEffectlesTile appliesEffectOn: game allPlayersPositions playing: seba."
