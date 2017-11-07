@@ -1,7 +1,7 @@
 tests
 testEffectlesTileEffectAppliedToThisPlayerIsWorking
 
-	| anEffectlesTile game seba board dice dice1 totalPlayers boardGenerator |
+	| anEffectlesTile game seba board dice dice1 totalPlayers boardGenerator generator |
 	
 	seba := Player named: 'sebastian'.
 	anEffectlesTile := Effectles new.
@@ -9,8 +9,8 @@ testEffectlesTileEffectAppliedToThisPlayerIsWorking
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	"diceGenerator := DiceFixedGenerator usingThisFaceValue: 1 havingThisIncrement: 1"
 	"dice1 := Dice withThisGenerator: "
-	dice1 := Dice faces: 6.
-	dice1 setValue: 1.
+	generator:= FixedNumberGenerator startFrom:0.
+	dice1 := Dice faces: 6 rollingFrom: generator.
 	dice := Array with: dice1.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: seba.

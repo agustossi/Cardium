@@ -1,14 +1,14 @@
 {
 	"instance" : {
 		"testWhenTimesToWinIsLowerThanZeroErrorOccurs" : "SebastianCalderone 11/2/2017 19:34",
-		"testWinnerCantBeReturnedWhilePlaying" : "SebastianCalderone 11/2/2017 19:33",
-		"testPlayingUntilWinningWithOneDice" : "SebastianCalderone 11/5/2017 17:50",
-		"testGameCannotBePlayedWhenStateIsntActive" : "SebastianCalderone 11/2/2017 18:38",
-		"testPlayerCannotPlayIfItsNotHisTurn" : "SebastianCalderone 11/2/2017 19:33",
-		"testPlayingUntilWinningWithTwoDice" : "SebastianCalderone 11/5/2017 17:54",
+		"testWinnerCantBeReturnedWhilePlaying" : "SebastianCalderone 11/7/2017 13:36",
+		"testPlayingUntilWinningWithOneDice" : "SebastianCalderone 11/7/2017 13:34",
+		"testGameCannotBePlayedWhenStateIsntActive" : "SebastianCalderone 11/7/2017 13:32",
+		"testPlayerCannotPlayIfItsNotHisTurn" : "SebastianCalderone 11/7/2017 13:33",
+		"testPlayingUntilWinningWithTwoDice" : "SebastianCalderone 11/7/2017 13:35",
 		"testSuccessOnGameCreation" : "SebastianCalderone 11/2/2017 19:27",
 		"testPlayersAreCorrectedAddedToGame" : "SebastianCalderone 11/2/2017 19:33",
-		"testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded" : "SebastianCalderone 11/2/2017 19:33"
+		"testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded" : "SebastianCalderone 11/7/2017 13:36"
 	},
 	"class" : { }
 }

@@ -1,14 +1,9 @@
 {
 	"instance" : {
 		"testDiceFaceValueLowerOrEqualToNumberOfFaces" : "sebastiancalderone 9/16/2017 23:14",
-		"testThrowDiceReturnOne" : "sebastiancalderone 9/16/2017 17:37",
-		"testThrowDiceReturnSix" : "sebastiancalderone 9/16/2017 19:25",
-		"testThrowDiceReturnTwo" : "sebastiancalderone 9/16/2017 19:25",
-		"testThrowDiceReturnFour" : "sebastiancalderone 9/16/2017 19:25",
-		"testDicesFaceQuantityGreaterThanZero" : "sebastiancalderone 9/16/2017 17:36",
-		"testThrowDiceReturnFive" : "sebastiancalderone 9/16/2017 19:24",
-		"testThrowDiceReturnThree" : "sebastiancalderone 9/16/2017 19:25",
-		"testThrowDice" : "sebastiancalderone 9/16/2017 17:39"
+		"testThrowDice" : "SebastianCalderone 11/7/2017 13:26",
+		"testDiceCreatedWithFixedGeneratorReturnsOne" : "SebastianCalderone 11/7/2017 13:29",
+		"testDicesFaceQuantityGreaterThanZero" : "sebastiancalderone 9/16/2017 17:36"
 	},
 	"class" : { }
 }

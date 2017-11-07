@@ -1,13 +1,13 @@
 tests
 testAtomicBombTileEffectAppliedToThisPlayerIsWorking
-	| anAtomicBombTile game seba board dice dice1 totalPlayers agus boardGenerator|
+	| anAtomicBombTile game seba board dice dice1 totalPlayers agus boardGenerator generator |
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'Agustina'.
 	anAtomicBombTile := AtomicBomb new.
 	boardGenerator := TileFixedGenerator using: anAtomicBombTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator .
-	dice1 := Dice faces: 6.
-	dice1 setValue: 1.
+	generator:= FixedNumberGenerator startFrom:0.
+	dice1 := Dice faces: 6 rollingFrom: generator.	
 	dice := Array with: dice1.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: seba.

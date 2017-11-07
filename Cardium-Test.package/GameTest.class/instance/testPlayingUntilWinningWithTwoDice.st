@@ -1,6 +1,6 @@
 tests
 testPlayingUntilWinningWithTwoDice
-	| game seba board dice dice1 dice2 agus totalPlayers aEffectlesTile boardGenerator |
+	| game seba board dice dice1 dice2 agus totalPlayers aEffectlesTile boardGenerator generator generator1 |
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
 	totalPlayers := OrderedCollection new.
@@ -9,10 +9,10 @@ testPlayingUntilWinningWithTwoDice
 	aEffectlesTile:= Effectles new.
 	boardGenerator := TileFixedGenerator using: aEffectlesTile.
 	board := Board ofSize: 20 withThisGenerator: boardGenerator.
-	dice1 := Dice faces: 6.
-	dice1 setValue: 1.
-	dice2 := Dice faces: 7.
-	dice2 setValue: 1.
+	generator:= FixedNumberGenerator startFrom:0.
+	dice1 := Dice faces: 6 rollingFrom: generator.
+	generator1:= FixedNumberGenerator startFrom:0.
+	dice2 := Dice faces: 7 rollingFrom: generator1.
 	dice := Array with: dice1 with: dice2.
 	game := Game
 		rounds: 1

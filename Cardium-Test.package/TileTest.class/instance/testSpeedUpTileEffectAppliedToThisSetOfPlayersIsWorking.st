@@ -1,12 +1,12 @@
 tests
 testSpeedUpTileEffectAppliedToThisSetOfPlayersIsWorking
-	| aSpeedUpTile game seba board dice dice1 totalPlayers boardGenerator |
+	| aSpeedUpTile game seba board dice dice1 totalPlayers boardGenerator generator |
 	seba := Player named: 'sebastian'.
 	aSpeedUpTile := SpeedUp new.
 	boardGenerator := TileFixedGenerator using: aSpeedUpTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.	
-	dice1 := Dice faces: 6.
-	dice1 setValue: 1.
+	generator:= FixedNumberGenerator startFrom:0.
+	dice1 := Dice faces: 6 rollingFrom: generator.
 	dice := Array with: dice1.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: seba.
