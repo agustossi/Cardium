@@ -1,4 +1,4 @@
 action
 assertGameIsNotEnded
-	state asSymbol == 'Ended' asSymbol
+	state isEnded
 		ifTrue: [ GameError signal: 'Game has finished']
