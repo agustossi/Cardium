@@ -16,5 +16,6 @@ testPlayersAreCorrectedAddedToGame
 		rounds: 2
 		playedBy: totalPlayers
 		withThisBoard: board
-		usingDice: dice.
+		usingDice: dice
+		withThis: (DeckFixedGenerator using: Speed new).
 	self assert: game numberOfPlayers equals: 3

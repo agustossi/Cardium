@@ -11,10 +11,18 @@ testGameCannotBePlayedWhenStateIsntActive
 	aEffectlesTile := Effectles new.
 	boardGenerator := TileFixedGenerator using: aEffectlesTile.
 	board := Board ofSize: 5 withThisGenerator: boardGenerator.
-	generator:= FixedNumberGenerator startFrom:6.
+	generator := FixedNumberGenerator startFrom: 6.
 	dice1 := Dice faces: 6 rollingFrom: generator.
-	dice := Array with: dice1.	
-	game := Game 	rounds: 1 	playedBy: totalPlayers 	withThisBoard: board	usingDice: dice.
+	dice := Array with: dice1.
+	game := Game
+		rounds: 1
+		playedBy: totalPlayers
+		withThisBoard: board
+		usingDice: dice
+		withThis: (DeckFixedGenerator using: Speed new).
 	game nextTurn: pepito.
-	self should: [ game nextTurn: seba ] raise: GameError withExceptionDo: [:signal | self assert: signal messageText equals: 'Game has finished'].
-	
+	self
+		should: [ game nextTurn: seba ]
+		raise: GameError
+		withExceptionDo:
+			[ :signal | self assert: signal messageText equals: 'Game has finished' ]

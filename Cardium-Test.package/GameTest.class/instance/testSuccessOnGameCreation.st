@@ -12,7 +12,8 @@ testSuccessOnGameCreation
 		rounds: 2
 		playedBy: totalPlayers
 		withThisBoard: board
-		usingDice: dice.
+		usingDice: dice
+		withThis: (DeckFixedGenerator using: Speed new).
 	self
 		assert: game isActive;
 		assert: game dice equals: dice;
