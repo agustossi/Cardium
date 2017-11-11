@@ -2,10 +2,16 @@
 	"commentStamp" : "<historical>",
 	"super" : "Object",
 	"category" : "Cardium-Model",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"faces"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "PermanentCard",
+	"instvars" : [
+		"value",
+		"faces",
+		"numberGenerator"
+	],
+	"name" : "Dice",
 	"type" : "normal"
 }

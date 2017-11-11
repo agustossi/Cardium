@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "Object",
+	"super" : "Exception",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PermanentCard",
+	"name" : "GameError",
 	"type" : "normal"
 }

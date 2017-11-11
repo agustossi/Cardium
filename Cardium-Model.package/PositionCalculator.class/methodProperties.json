@@ -1,0 +1,9 @@
+{
+	"instance" : {
+		"calculateNewPositionUsing:inThis:havingThisNew:" : "SebastianCalderone 11/2/2017 19:57",
+		"calculateNewTileUsing:inThis:havingThisNew:" : "SebastianCalderone 11/7/2017 12:11",
+		"calculateNewSumOfTilesUsing:havingThisNew:" : "SebastianCalderone 11/2/2017 19:49",
+		"calculateNewRoundUsing:inThis:" : "SebastianCalderone 11/2/2017 19:05"
+	},
+	"class" : { }
+}

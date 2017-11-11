@@ -1,0 +1,3 @@
+initialization
+pick
+	^ cardToBeUsed.

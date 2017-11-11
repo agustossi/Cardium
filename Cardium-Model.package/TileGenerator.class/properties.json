@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PermanentCard",
+	"name" : "TileGenerator",
 	"type" : "normal"
 }

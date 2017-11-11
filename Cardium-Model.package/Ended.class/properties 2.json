@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "Object",
+	"super" : "State",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PermanentCard",
+	"name" : "Ended",
 	"type" : "normal"
 }

@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PermanentCard",
+	"name" : "Tile",
 	"type" : "normal"
 }

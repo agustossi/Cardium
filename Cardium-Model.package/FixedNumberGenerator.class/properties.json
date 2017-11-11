@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "PermanentCard",
+	"instvars" : [
+		"rollValue"
+	],
+	"name" : "FixedNumberGenerator",
 	"type" : "normal"
 }
