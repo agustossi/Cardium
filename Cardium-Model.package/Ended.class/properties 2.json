@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "State",
+	"category" : "Cardium-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Ended",
+	"type" : "normal"
+}

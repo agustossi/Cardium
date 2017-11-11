@@ -2,7 +2,7 @@
 	"instance" : {
 		"initializeBoardSize:initilizeGenerator:" : "SebastianCalderone 10/28/2017 13:34",
 		"numberOfTiles" : "sebastian 9/9/2017 18:46",
-		"tileAtPosition:" : "sebastian 10/1/2017 21:26"
+		"tileAtPosition:" : "SebastianCalderone 11/11/2017 15:01"
 	},
 	"class" : {
 		"ofSize:withThisGenerator:" : "SebastianCalderone 10/28/2017 14:08",
