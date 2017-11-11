@@ -15,7 +15,7 @@ testPlayerCannotPlayIfItsNotHisTurn
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: Speed new).
+		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
 	self
 		should: [ game nextTurn: agus ]
 		raise: GameError

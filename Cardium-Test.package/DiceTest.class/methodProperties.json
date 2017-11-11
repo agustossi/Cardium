@@ -1,7 +1,8 @@
 {
 	"instance" : {
-		"testThrowDice" : "SebastianCalderone 11/7/2017 13:26",
-		"testDiceCreatedWithFixedGeneratorReturnsOne" : "SebastianCalderone 11/7/2017 13:29",
+		"testWhenNextIntIsBiggerThanNumberOfFacesOneIsReturned" : "AgustinaTossi 11/11/2017 15:18",
+		"testThrowDice" : "AgustinaTossi 11/11/2017 15:12",
+		"testDiceCreatedWithFixedGeneratorReturnsOne" : "AgustinaTossi 11/11/2017 15:13",
 		"testDicesFaceQuantityGreaterThanZero" : "AgustinaTossi 11/11/2017 14:15"
 	},
 	"class" : { }

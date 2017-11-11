@@ -1,11 +1,13 @@
 tests
-testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo
-	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anOverloadCard deckGenerator cards|
+testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate
+	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anOverloadCard deckGenerator aSpeedCard cards|
 	seba := Player named: 'sebastian'.
 	aCardGivingTile := CardGiving new.
-	anOverloadCard := Overload new.	
-	cards := OrderedCollection new.
+	anOverloadCard := Overload new.
+	aSpeedCard := Speed new.
+	cards := OrderedCollection new. 
 	cards add: anOverloadCard.
+	cards add: aSpeedCard.
 	boardGenerator := TileFixedGenerator using: aCardGivingTile.
 	deckGenerator := DeckFixedGenerator using: cards.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
@@ -23,7 +25,9 @@ testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
 	game nextTurn: seba.
+	game thePlayer: seba appliesPermanent: aSpeedCard on: seba.
+	game nextTurn: seba.
 	game thePlayer: seba appliesPermanent: anOverloadCard on: seba.
 	game nextTurn: seba.
 	self assert: (game positionOf: seba) rounds equals: 0.
-	self assert: (game positionOf: seba) tiles equals: 1.
+	self assert: (game positionOf: seba) tiles equals: 6.

@@ -15,7 +15,7 @@ testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: Speed new).
+		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
 	game nextTurn: player.
 	game isWinner: player.
 	self deny: game isActive

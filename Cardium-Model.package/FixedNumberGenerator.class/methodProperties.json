@@ -1,7 +1,8 @@
 {
 	"instance" : {
 		"initialize:" : "SebastianCalderone 11/7/2017 13:19",
-		"nextInt:" : "SebastianCalderone 11/7/2017 13:28"
+		"resetRollValue:" : "AgustinaTossi 11/11/2017 15:18",
+		"nextInt:" : "AgustinaTossi 11/11/2017 15:18"
 	},
 	"class" : {
 		"startFrom:" : "SebastianCalderone 11/7/2017 13:18"

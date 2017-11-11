@@ -1,4 +1,5 @@
 initialization
 nextInt: aNumberOfFaces
-	   rollValue := rollValue + 1.
-		^ rollValue.
+	(self resetRollValue: aNumberOfFaces).
+	rollValue := rollValue + 1.
+	^ rollValue

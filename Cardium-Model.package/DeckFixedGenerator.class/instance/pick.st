@@ -1,3 +1,3 @@
 initialization
 pick
-	^ cardToBeUsed.
+	^ cardsToBeUsed.

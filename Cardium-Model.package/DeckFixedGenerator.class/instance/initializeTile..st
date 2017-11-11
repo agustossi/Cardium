@@ -1,3 +1,3 @@
 initialization
-initializeTile: aCard 
-	cardToBeUsed:=aCard.
+initializeTile: someCards 
+	cardsToBeUsed:=someCards.

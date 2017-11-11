@@ -1,3 +1,3 @@
 as yet unclassified
-using: aCard 
-	^ self new initializeTile: aCard.
+using: someCards 
+	^ self new initializeTile: someCards.
