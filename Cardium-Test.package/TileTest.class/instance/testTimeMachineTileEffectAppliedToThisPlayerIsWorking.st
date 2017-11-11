@@ -5,7 +5,7 @@ testTimeMachineTileEffectAppliedToThisPlayerIsWorking
 	aTimeMachineTile := TimeMachine new.
 	boardGenerator := TileFixedGenerator using: aTimeMachineTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
-	generator:= FixedNumberGenerator startFrom:0.
+	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.
 	dice := Array with: dice1.
 	totalPlayers := OrderedCollection new.
@@ -14,9 +14,10 @@ testTimeMachineTileEffectAppliedToThisPlayerIsWorking
 		rounds: 1
 		playedBy: totalPlayers
 		withThisBoard: board
-		usingDice: dice.	
+		usingDice: dice
+		withThis: (DeckFixedGenerator using: Speed new).
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
-	game nextTurn: seba.	
+	game nextTurn: seba.
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0

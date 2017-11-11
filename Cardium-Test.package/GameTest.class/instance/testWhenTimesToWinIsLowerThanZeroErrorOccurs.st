@@ -11,5 +11,6 @@ testWhenTimesToWinIsLowerThanZeroErrorOccurs
 				rounds: 0
 				playedBy: player
 				withThisBoard: board
-				usingDice: dice ]
+				usingDice: dice
+				withThis: (DeckFixedGenerator using: Speed new) ]
 		raise: GameError

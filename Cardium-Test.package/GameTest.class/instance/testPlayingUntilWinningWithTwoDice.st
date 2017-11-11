@@ -6,19 +6,20 @@ testPlayingUntilWinningWithTwoDice
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: seba.
 	totalPlayers add: agus.
-	aEffectlesTile:= Effectles new.
+	aEffectlesTile := Effectles new.
 	boardGenerator := TileFixedGenerator using: aEffectlesTile.
 	board := Board ofSize: 20 withThisGenerator: boardGenerator.
-	generator:= FixedNumberGenerator startFrom:0.
+	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.
-	generator1:= FixedNumberGenerator startFrom:0.
+	generator1 := FixedNumberGenerator startFrom: 0.
 	dice2 := Dice faces: 7 rollingFrom: generator1.
 	dice := Array with: dice1 with: dice2.
 	game := Game
 		rounds: 1
 		playedBy: totalPlayers
 		withThisBoard: board
-		usingDice: dice.
+		usingDice: dice
+		withThis: (DeckFixedGenerator using: Speed new).
 	self assert: (game positionOf: seba) tiles equals: 0.
 	self assert: (game positionOf: agus) tiles equals: 0.
 	self assert: (game positionOf: seba) rounds equals: 0.
