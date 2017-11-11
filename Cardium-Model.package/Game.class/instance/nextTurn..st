@@ -4,11 +4,9 @@ nextTurn: aPlayer
 	self assertGameIsNotEnded.
 	self assertIsTheTurnof: aPlayer.
 	aNumberOfTiles := 0.
-	aNumberOfTiles := dice sumNumbers: [ :d | d faceValue ].	
+	aNumberOfTiles := dice sumNumbers: [ :d | d faceValue ].
+	aNumberOfTiles := self applyPermanentEffectsOn: aPlayer withThisThrow: aNumberOfTiles.	
 	self  move: aPlayer tiles: aNumberOfTiles.
-	self  tileEffectAppliedTo: aPlayer.
-	"playerPositions at: aPlayer name put: (self position: movesToBeMade).
-	anEffectlesTile appliesEffectOn: game allPlayersPositions playing: seba."
-	"(board tileAtPosition: ((playerPositions at: aPlayer name) tile)) appliesEffectOn: playerPositions playing:      aPlayer."
+	self  tileEffectAppliedTo: aPlayer.	
 	self keepingTrackOfPlayerIndex.
 	self isWinner: aPlayer

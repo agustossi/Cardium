@@ -1,6 +1,9 @@
 {
 	"instance" : {
-		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "SebastianCalderone 11/8/2017 21:28"
+		"testPlayerCantUseCardThatsNotInHisDeck" : "AgustinaTossi 11/11/2017 14:18",
+		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "AgustinaTossi 11/11/2017 14:18",
+		"testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/11/2017 14:17",
+		"testPlayerCantUseCardThatHasAlreadyUsed" : "AgustinaTossi 11/11/2017 14:22"
 	},
 	"class" : { }
 }
