@@ -5,7 +5,4 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "PermanentCard",
-	"type" : "normal"
-}
+	"instvars"

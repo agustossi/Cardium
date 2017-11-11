@@ -1,3 +1,0 @@
-testing
-isActive
-	^ (state isActive)

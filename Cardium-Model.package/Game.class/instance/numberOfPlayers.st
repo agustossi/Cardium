@@ -1,3 +1,0 @@
-action
-numberOfPlayers
-	^ players size
