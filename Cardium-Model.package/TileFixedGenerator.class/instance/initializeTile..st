@@ -1,3 +1,3 @@
-as yet unclassified
-initializeTile: anEffectlesTile
-	tileToBeUsed:= anEffectlesTile.
+initialization
+initializeTile: aTile
+	tileToBeUsed:= aTile.
