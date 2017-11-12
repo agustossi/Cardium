@@ -15,7 +15,7 @@ testSpeedUpTileEffectAppliedToThisSetOfPlayersIsWorking
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: Speed new).
+		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
 	game nextTurn: seba.

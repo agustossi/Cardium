@@ -14,7 +14,10 @@
 		"playerIndex",
 		"winner",
 		"playerPositions",
-		"positionCalculator"
+		"positionCalculator",
+		"playersDecks",
+		"cardsAffectingPlayers",
+		"deck"
 	],
 	"name" : "Game",
 	"type" : "normal"
