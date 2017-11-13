@@ -17,7 +17,8 @@
 		"positionCalculator",
 		"playersDecks",
 		"cardsAffectingPlayers",
-		"deck"
+		"deck",
+		"tileHandler"
 	],
 	"name" : "Game",
 	"type" : "normal"

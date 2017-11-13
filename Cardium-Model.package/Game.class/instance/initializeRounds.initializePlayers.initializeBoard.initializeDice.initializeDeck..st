@@ -13,5 +13,6 @@ initializeRounds: aRound initializePlayers: somePlayers initializeBoard: aBoard 
 	deck := OrderedCollection new.
 	self initializeDeckWithThisGenerator: deckGenerator.
 	self playersPositionInizialization.
-	self playersDecksInizialization.
-	self cardsAffectingPlayersInitialization
+	self playersDecksInizialization: deckGenerator.
+	self cardsAffectingPlayersInitialization.
+	tileHandler := OrderedCollection new.

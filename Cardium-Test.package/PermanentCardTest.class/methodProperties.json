@@ -1,13 +1,13 @@
 {
 	"instance" : {
 		"testWhenCushioningCardIsAppliedAllPlayersMovesHalfWhatTheDiceSays" : "AgustinaTossi 11/11/2017 17:10",
-		"testPlayerCantUseCardThatsNotInHisDeck" : "AgustinaTossi 11/11/2017 16:59",
+		"testPlayerCantUseCardThatsNotInHisDeck" : "AgustinaTossi 11/12/2017 20:43",
 		"testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate" : "AgustinaTossi 11/11/2017 17:18",
 		"testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/11/2017 17:21",
 		"testWhenOverloadCardIsAppliedToOtherPlayerThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/11/2017 17:25",
 		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "AgustinaTossi 11/11/2017 17:26",
 		"testPlayerCantUseCardWhenItsNotHisTurn" : "AgustinaTossi 11/11/2017 17:01",
-		"testPlayerCantUseCardThatHasAlreadyUsed" : "AgustinaTossi 11/11/2017 16:59",
+		"testPlayerCantUseCardThatHasAlreadyUsed" : "AgustinaTossi 11/12/2017 20:44",
 		"testWhen2CushioningCardIsAppliedAllPlayersMovesQuarterWhatTheDiceSays" : "AgustinaTossi 11/11/2017 17:08"
 	},
 	"class" : { }

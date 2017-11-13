@@ -20,7 +20,8 @@ testPlayerCantUseCardThatHasAlreadyUsed
 		withThisBoard: board
 		usingDice: dice
 		withThis: deckGenerator.	
-	game nextTurn: seba.
+	
+	game thePlayer: seba appliesPermanent: anOverloadCard on: seba.
 	game thePlayer: seba appliesPermanent: anOverloadCard on: seba.
 	self
 		should: [ game thePlayer: seba appliesPermanent: anOverloadCard on: seba ]
