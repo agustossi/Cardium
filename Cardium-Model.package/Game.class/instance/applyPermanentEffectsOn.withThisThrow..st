@@ -1,4 +1,4 @@
-as yet unclassified
+action
 applyPermanentEffectsOn: aPlayer withThisThrow: diceThrow 
 	| cards finalNumber value |
 	cards:= cardsAffectingPlayers at: aPlayer.

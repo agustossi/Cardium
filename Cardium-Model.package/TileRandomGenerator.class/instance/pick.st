@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 pick
 	| tilesToPick anEffectlesTile anAtomicBombTile aMoonWalkTile aWormHoleTile aSpeedUpTile aTimeMachineTile  |
 	tilesToPick:= OrderedCollection new.

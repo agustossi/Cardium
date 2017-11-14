@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 deckSizeOf: aPlayer 
 	^(playersDecks at: aPlayer) size.

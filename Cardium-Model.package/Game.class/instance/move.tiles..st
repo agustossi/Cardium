@@ -1,4 +1,4 @@
-as yet unclassified
+action
 move: aPlayer tiles: movesToBeMade 
 	
 	| positionsHistory  currentPosition |

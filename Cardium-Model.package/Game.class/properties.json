@@ -18,7 +18,9 @@
 		"playersDecks",
 		"cardsAffectingPlayers",
 		"deck",
-		"tileHandler"
+		"tileHandler",
+		"cardHandler",
+		"lastPlay"
 	],
 	"name" : "Game",
 	"type" : "normal"

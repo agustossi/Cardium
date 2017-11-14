@@ -1,4 +1,5 @@
-as yet unclassified
+action
 undoTheLastPlayOn: aGame of: aPlayer 
 	
-	aGame removeLastDecksCardOf: aPlayer
+	aGame removeLastDecksCardOf: aPlayer.
+	aGame addLastTile: (UndoTileHandler new).

@@ -1,4 +1,4 @@
-as yet unclassified
+affecting
 appliesEffectTo: aPlayer on: aGame 
 	|playerHistory currentPosition lastPosition aNumberOfTiles |
 	playerHistory  := ((aGame playerPositions) at: aPlayer).

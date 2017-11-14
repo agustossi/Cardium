@@ -21,10 +21,8 @@ testWhenUndoAppliedWithCardGivingTheEffectUndoes
 		withThisBoard: board
 		usingDice: dice
 		withThis: deckGenerator.		
-	self assert: (game positionOf: seba) tiles equals: 0.
-   self assert: (game positionOf: seba) rounds equals: 0.		
-	game nextTurn: seba.
-	self assert: (game positionOf: seba) tiles equals: 1.
-   self assert: (game positionOf: seba) rounds equals: 0.	
-	game thePlayer: seba applies: anUndoCard.
 	self assert:	 (game deckSizeOf: seba) equals: 2.
+	game nextTurn: seba.
+	self assert:	 (game deckSizeOf: seba) equals: 3.
+	game thePlayer: seba applies: anUndoCard.
+	self assert:	 (game deckSizeOf: seba) equals: 1.

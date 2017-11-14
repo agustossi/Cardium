@@ -1,4 +1,4 @@
-as yet unclassified
+action
 effectOnThisGame: aGame on: aPlayer 
 	|playerHistory currentPosition lastPosition aNumberOfTiles |
 	playerHistory  := ((aGame playerPositions) at: aPlayer).

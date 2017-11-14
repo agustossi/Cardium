@@ -1,6 +1,6 @@
-as yet unclassified
+action
 appliesCardEffectOn: aGame 
-	| lastPlayer lastTile |
+	| lastPlayer lastPlay |
 	lastPlayer:= aGame lastPlayer.
-	lastTile := aGame lastTileStepped.
-	lastTile undoTheLastPlayOn: aGame of: lastPlayer.
+	lastPlay := aGame lastPlay.
+	lastPlay undoTheLastPlayOn: aGame of: lastPlayer.

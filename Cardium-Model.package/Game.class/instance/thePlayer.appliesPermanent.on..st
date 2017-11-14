@@ -1,4 +1,4 @@
-as yet unclassified
+action
 thePlayer: aPlayer appliesPermanent: aCard on: aTarget
 	self assertIsTheTurnof: aPlayer.
 	self assertThePlayers: aPlayer deckHasThis: aCard.

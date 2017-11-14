@@ -1,3 +1,3 @@
-as yet unclassified
+affecting
 appliesEffectTo: aPlayer on: aGame 
 	aGame move: aPlayer tiles:4. 

@@ -1,4 +1,4 @@
-as yet unclassified
+calculating
 calculateNewPositionUsing: currentPosition inThis: aBoard havingThisNew: position
 	
 	

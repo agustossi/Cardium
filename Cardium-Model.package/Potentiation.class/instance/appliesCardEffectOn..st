@@ -1,4 +1,4 @@
-as yet unclassified
+action
 appliesCardEffectOn: aGame 
 	| lastPlayer lastTile |
 	lastPlayer:= aGame lastPlayer.

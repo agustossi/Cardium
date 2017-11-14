@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "Object",
+	"super" : "CardHandler",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cardsToBeUsed"
+		"card",
+		"player"
 	],
-	"name" : "DeckFixedGenerator",
+	"name" : "AnnulmentHandler",
 	"type" : "normal"
 }

@@ -1,4 +1,4 @@
-as yet unclassified
+removing
 removeLastDecksCardOf: aPlayer 
 	| cards |
 	cards:=playersDecks at: aPlayer.

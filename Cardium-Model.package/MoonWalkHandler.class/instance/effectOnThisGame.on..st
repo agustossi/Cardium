@@ -1,4 +1,4 @@
-as yet unclassified
+action
 effectOnThisGame: aGame on: aPlayer 
 	| players onlyAffectThisPlayers |
 	players := aGame players.

@@ -1,4 +1,4 @@
-as yet unclassified
+calculating
 calculateNewTileUsing: currentPosition inThis: aBoard havingThisNew: position
 
 	| boardSize newPositionValue |
