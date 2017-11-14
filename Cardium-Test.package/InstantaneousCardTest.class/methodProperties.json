@@ -1,20 +1,24 @@
 {
 	"instance" : {
-		"testWhenPotentiationAppliedWithCardGivingThePlayerTakesTwoCards" : "AgustinaTossi 11/13/2017 17:29",
-		"testWhenPotentiationAppliedWithTimeMachineThePositionIsTwoTurnsBackwards" : "AgustinaTossi 11/12/2017 23:02",
-		"testWhenPotentiationAppliedWithAtomicBombNothingHappens" : "AgustinaTossi 11/12/2017 22:50",
-		"testWhenPotentiationAppliedWithMoonWalkThePositionIsThreeTilesBackwards" : "AgustinaTossi 11/12/2017 22:40",
-		"testWhenUndoAppliedWithSpeedUpTheEffectUndoes" : "AgustinaTossi 11/14/2017 11:20",
-		"testWhenPotentiationAppliedWithWormHoleThePositionIsFourTilesBackwards" : "AgustinaTossi 11/12/2017 22:23",
 		"testWhenPotentiationAppliedWithSpeedUpThePositionIsFourTilesForward" : "AgustinaTossi 11/12/2017 20:00",
-		"testWhenPotentiationAppliedWithEffectlesNothingHappens" : "AgustinaTossi 11/12/2017 22:51",
-		"testWhenAnnulmentIsUsedCardIsOutOfGame" : "AgustinaTossi 11/12/2017 19:16",
 		"testAnnulmentCantBeUsedAgainstAPlayerThatDoesntHaveTheCard" : "AgustinaTossi 11/12/2017 19:14",
-		"testWhenUndoAppliedWithMoonWalkTheEffectUndoes" : "AgustinaTossi 11/13/2017 16:49",
-		"testWhenUndoAppliedWithEffectlesNothingHappens" : "AgustinaTossi 11/13/2017 17:41",
+		"testWhenPotentiationAppliedWithMoonWalkThePositionIsThreeTilesBackwards" : "AgustinaTossi 11/12/2017 22:40",
+		"testWhenPotentiationAppliedWithWormHoleThePositionIsFourTilesBackwards" : "AgustinaTossi 11/12/2017 22:23",
+		"testWhenPotentiationAppliedWithEffectlesNothingHappens" : "AgustinaTossi 11/12/2017 22:51",
+		"testWhenThreeUndoAppliedWithSpeedUpTheEffectOfUndoUndoes" : "AgustinaTossi 11/14/2017 12:29",
 		"testWhenUndoAppliedWithWormHoleTheEffectUndoes" : "AgustinaTossi 11/13/2017 16:36",
+		"testWhenUndoAppliedWithCardGivingTheEffectUndoes" : "AgustinaTossi 11/14/2017 12:10",
+		"testWhenUndoAppliedWithMoonWalkTheEffectUndoes" : "AgustinaTossi 11/13/2017 16:49",
+		"testWhenPotentiationAppliedWithTimeMachineThePositionIsTwoTurnsBackwards" : "AgustinaTossi 11/12/2017 23:02",
+		"testWhenUndoAppliedWithEffectlesNothingHappens" : "AgustinaTossi 11/13/2017 17:41",
+		"testWhenUndoAppliedWithSpeedUpTheEffectUndoes" : "AgustinaTossi 11/14/2017 11:20",
+		"testWhenAnnulmentIsUsedCardIsOutOfGame" : "AgustinaTossi 11/12/2017 19:16",
+		"testWhenTwoUndoAppliedWithSpeedUpTheEffectOfUndoUndoes" : "AgustinaTossi 11/14/2017 12:27",
+		"testWhenPotentiationAppliedWithAtomicBombNothingHappens" : "AgustinaTossi 11/12/2017 22:50",
 		"testPlayerCantUseAnnulmentIfDoesnthaveAnnulmentCard" : "AgustinaTossi 11/12/2017 19:17",
-		"testWhenUndoAppliedWithTimeMachineTheEffectUndoes" : "AgustinaTossi 11/14/2017 11:20"
+		"testWhenUndoAppliedWithTimeMachineTheEffectUndoes" : "AgustinaTossi 11/14/2017 11:20",
+		"testWhenPotentiationAppliedWithCardGivingThePlayerTakesTwoCards" : "AgustinaTossi 11/13/2017 17:29",
+		"testWhenUndoAppliedWithAtomicBombTheEffectUndoes" : "AgustinaTossi 11/14/2017 12:25"
 	},
 	"class" : { }
 }
