@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "",
-	"super" : "CardHandler",
+	"commentStamp" : "<historical>",
+	"super" : "TileHandler",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

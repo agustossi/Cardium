@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "TileHandler",
+	"super" : "InstantaneousCard",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WormholeHandler",
+	"name" : "Undo",
 	"type" : "normal"
 }
