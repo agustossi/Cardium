@@ -2,7 +2,7 @@ tests
 testWhenPotentiationAppliedAfterUndoNothingHappens
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards aPotentiationCard aCardGIvingTile anUndoCard |
 	seba := Player named: 'sebastian'.	
-	aCardGIvingTile := CardGiving new.
+	aCardGIvingTile := CardGivingEffect new.
 	aPotentiationCard := Potentiation new.
 	anUndoCard := Undo new.
 	cards := OrderedCollection new.	

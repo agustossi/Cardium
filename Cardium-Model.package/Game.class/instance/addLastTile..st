@@ -1,4 +1,4 @@
 adding
 addLastTile: anUndoTileHandler 
-	tileHandler add: anUndoTileHandler.
-	lastPlay := tileHandler.
+	allTilesStepped add: anUndoTileHandler.
+	lastPlay := allTilesStepped.

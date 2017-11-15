@@ -4,11 +4,11 @@ pick
 	tilesToPick:= OrderedCollection new.
 	
 	anEffectlesTile:= Effectles new.
-	anAtomicBombTile:= AtomicBomb new.
-	aMoonWalkTile:= MoonWalk new.
-	aWormHoleTile:= Wormhole new.
-	aSpeedUpTile:=SpeedUp new.
-	aTimeMachineTile:=TimeMachine new.	
+	anAtomicBombTile:= AtomicBombEffect new.
+	aMoonWalkTile:= MoonWalkEffect new.
+	aWormHoleTile:= WormholeEffect new.
+	aSpeedUpTile:=SpeedUpEffect new.
+	aTimeMachineTile:=TimeMachineEffect new.	
 	
 	1 to: 40 do: [:index | tilesToPick add: anEffectlesTile ]. 
 	41 to: 42 do: [:index | tilesToPick add: anAtomicBombTile ].

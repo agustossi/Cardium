@@ -2,7 +2,7 @@ tests
 testWhenPotentiationAppliedWithWormHoleThePositionIsFourTilesBackwards
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards aPotentiationCard aWormholeTile |
 	seba := Player named: 'sebastian'.	
-	aWormholeTile := Wormhole new.
+	aWormholeTile := WormholeEffect new.
 	aPotentiationCard := Potentiation new.	
 	cards := OrderedCollection new.	
 	cards add: aPotentiationCard.

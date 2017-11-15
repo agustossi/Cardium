@@ -1,3 +1,3 @@
 accessing
 lastTileStepped
-	^ tileHandler at: (tileHandler size).
+	^ allTilesStepped at: (allTilesStepped size).

@@ -2,7 +2,7 @@ tests
 testWhenUndoAppliedWithCardGivingTheEffectUndoes
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards anUndoCard aCardGivingTile |
 	seba := Player named: 'sebastian'.	
-	aCardGivingTile := CardGiving new.
+	aCardGivingTile := CardGivingEffect new.
 	anUndoCard := Undo new.	
 	cards := OrderedCollection new.	
 	cards add: anUndoCard.

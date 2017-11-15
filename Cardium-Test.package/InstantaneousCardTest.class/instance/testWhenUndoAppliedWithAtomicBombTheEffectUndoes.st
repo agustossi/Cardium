@@ -3,7 +3,7 @@ testWhenUndoAppliedWithAtomicBombTheEffectUndoes
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards anUndoCard anAtomicBombTile agus |
 	seba := Player named: 'sebastian'.
 	agus:=Player named: 'agustina'.
-	anAtomicBombTile := AtomicBomb new.
+	anAtomicBombTile := AtomicBombEffect new.
 	anUndoCard := Undo new.	
 	cards := OrderedCollection new.	
 	cards add: anUndoCard.

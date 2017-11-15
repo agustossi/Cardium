@@ -3,7 +3,7 @@ testWhenUndoAppliedWithMoonWalkTheEffectUndoes
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards anUndoCard aMoonWalkTile agus |
 	seba := Player named: 'sebastian'.	
 	agus := Player named: 'agustina'.
-	aMoonWalkTile := MoonWalk new.
+	aMoonWalkTile := MoonWalkEffect new.
 	anUndoCard := Undo new.	
 	cards := OrderedCollection new.	
 	cards add: anUndoCard.

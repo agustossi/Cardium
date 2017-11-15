@@ -3,7 +3,7 @@ testWhenPotentiationAppliedWithAtomicBombNothingHappens
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards aPotentiationCard anAtomicBombTile  |
 	seba := Player named: 'sebastian'.	
 	
-	anAtomicBombTile := AtomicBomb new.
+	anAtomicBombTile := AtomicBombEffect new.
 	aPotentiationCard := Potentiation new.	
 	cards := OrderedCollection new.	
 	cards add: aPotentiationCard.

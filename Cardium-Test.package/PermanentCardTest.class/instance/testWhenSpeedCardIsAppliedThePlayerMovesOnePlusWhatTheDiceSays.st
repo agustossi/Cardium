@@ -2,7 +2,7 @@ tests
 testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays
 	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator aSpeedCard deckGenerator cards |
 	seba := Player named: 'sebastian'.
-	aCardGivingTile := CardGiving new.
+	aCardGivingTile := CardGivingEffect new.
 	aSpeedCard := Speed new.
 	cards := OrderedCollection new.
 	cards add: aSpeedCard.

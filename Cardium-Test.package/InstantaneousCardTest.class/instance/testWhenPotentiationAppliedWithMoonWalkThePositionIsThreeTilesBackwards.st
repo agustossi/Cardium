@@ -3,7 +3,7 @@ testWhenPotentiationAppliedWithMoonWalkThePositionIsThreeTilesBackwards
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards aPotentiationCard aMoonWalkTile agus |
 	seba := Player named: 'sebastian'.	
 	agus := Player named: 'agustina'.
-	aMoonWalkTile := MoonWalk new.
+	aMoonWalkTile := MoonWalkEffect new.
 	aPotentiationCard := Potentiation new.	
 	cards := OrderedCollection new.	
 	cards add: aPotentiationCard.

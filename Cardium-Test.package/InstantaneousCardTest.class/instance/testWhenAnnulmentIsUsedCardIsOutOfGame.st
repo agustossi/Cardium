@@ -4,7 +4,7 @@ testWhenAnnulmentIsUsedCardIsOutOfGame
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
 	aSpeedCard := Speed new.
-	aCardGivingTile := CardGiving new.
+	aCardGivingTile := CardGivingEffect new.
 	anAnnulmentCard := Annulment new.	
 	cards := OrderedCollection new.
 	

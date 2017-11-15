@@ -2,7 +2,7 @@ tests
 testWhenUndoAppliedWithAnnulmentTheEffectUndoes
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards anUndoCard aCardGivingTile anAnnulmentCard aSpeedCard |
 	seba := Player named: 'sebastian'.	
-	aCardGivingTile := CardGiving new.
+	aCardGivingTile := CardGivingEffect new.
 	anUndoCard := Undo new.	
 	anAnnulmentCard := Annulment new.
 	aSpeedCard := Speed new.

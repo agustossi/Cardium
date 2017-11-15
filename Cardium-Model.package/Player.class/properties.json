@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"name",
-		"position"
+		"name"
 	],
 	"name" : "Player",
 	"type" : "normal"

@@ -2,7 +2,7 @@ tests
 testWormholeTileEffectAppliedToThisSetOfPlayersIsWorking
 	| aWormholeTile game seba board dice dice1 totalPlayers boardGenerator generator |
 	seba := Player named: 'sebastian'.
-	aWormholeTile := Wormhole new.
+	aWormholeTile := WormholeEffect new.
 	boardGenerator := TileFixedGenerator using: aWormholeTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
