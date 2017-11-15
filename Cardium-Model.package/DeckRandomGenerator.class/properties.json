@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "TileGenerator",
+	"super" : "Object",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"tileToBeUsed"
+		"aRandomGenerator",
+		"cardsToPick"
 	],
-	"name" : "TileFixedGenerator",
+	"name" : "DeckRandomGenerator",
 	"type" : "normal"
 }

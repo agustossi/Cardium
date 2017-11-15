@@ -20,7 +20,8 @@
 		"deck",
 		"tileHandler",
 		"cardHandler",
-		"lastPlay"
+		"lastPlay",
+		"globalPermanentCards"
 	],
 	"name" : "Game",
 	"type" : "normal"

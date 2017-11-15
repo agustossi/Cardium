@@ -1,3 +1,3 @@
 accessing
 tileAtPosition: aPosition 
-	^tiles at: aPosition
+	^ tiles at: aPosition

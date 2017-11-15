@@ -1,13 +1,13 @@
 tests
-testWhenCushioningCardIsAppliedAllPlayersMovesHalfWhatTheDiceSays
-	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator aCushioningCard deckGenerator agus cards|
+testWhenCushioningCardIsAppliedWithMoonWalkAllPlayersMovesHalfWhatTheDiceSays
+	| aMoonWalkTile game seba board dice dice1 totalPlayers boardGenerator generator aCushioningCard deckGenerator agus cards|
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
-	aCardGivingTile := CardGiving new.
+	aMoonWalkTile := MoonWalk new.
 	aCushioningCard := Cushioning new.
 	cards := OrderedCollection new.
 	cards add: aCushioningCard.
-	boardGenerator := TileFixedGenerator using: aCardGivingTile.
+	boardGenerator := TileFixedGenerator using: aMoonWalkTile.
 	deckGenerator := DeckFixedGenerator using: cards.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
@@ -17,7 +17,7 @@ testWhenCushioningCardIsAppliedAllPlayersMovesHalfWhatTheDiceSays
 	totalPlayers add: seba.
 	totalPlayers add: agus.
 	game := Game
-		rounds: 1
+		rounds: 2
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
@@ -29,11 +29,15 @@ testWhenCushioningCardIsAppliedAllPlayersMovesHalfWhatTheDiceSays
 	self assert: (game positionOf: agus) tiles equals: 0.
 	game nextTurn: seba.
 	game nextTurn: agus.
+	self assert: (game positionOf: seba) rounds equals: -1.
+	self assert: (game positionOf: seba) tiles equals: 8.
+	self assert: (game positionOf: agus) rounds equals: -1.
+	self assert: (game positionOf: agus) tiles equals: 9.
 	game thePlayer: seba appliesPermanent: aCushioningCard.
 	game nextTurn: seba.
 	game nextTurn: agus.
 	self assert: (game positionOf: seba) rounds equals: 0.
-	self assert: (game positionOf: seba) tiles equals: 3.
+	self assert: (game positionOf: seba) tiles equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.
-	self assert: (game positionOf: agus) tiles equals: 4.
+	self assert: (game positionOf: agus) tiles equals: 2.
 	

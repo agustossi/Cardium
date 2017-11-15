@@ -1,5 +1,5 @@
 adding
-addCardTo: aPlayer 
+pickUpFromMazeAndAsignTo: aPlayer 
 	| cards aCard |
 	cards := playersDecks at: aPlayer.
 	aCard := deck removeAt: (deck size).

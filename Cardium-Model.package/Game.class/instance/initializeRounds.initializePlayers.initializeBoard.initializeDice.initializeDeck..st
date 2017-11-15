@@ -17,3 +17,4 @@ initializeRounds: aRound initializePlayers: somePlayers initializeBoard: aBoard 
 	self cardsAffectingPlayersInitialization.
 	tileHandler := OrderedCollection new.
 	cardHandler := OrderedCollection new.
+	globalPermanentCards := OrderedCollection new.

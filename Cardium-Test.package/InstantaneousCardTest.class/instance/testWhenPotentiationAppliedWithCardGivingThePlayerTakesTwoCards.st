@@ -23,9 +23,9 @@ testWhenPotentiationAppliedWithCardGivingThePlayerTakesTwoCards
 		withThisBoard: board
 		usingDice: dice
 		withThis: deckGenerator.		
-	self assert: ( game deckSizeOf: seba ) equals: 2.
+	self assert: ( game deckSizeOf: seba ) equals: 1.
 	game nextTurn: seba.
-	self assert: ( game deckSizeOf: seba ) equals: 3.
+	self assert: ( game deckSizeOf: seba ) equals: 2.
 	game thePlayer: seba applies: aPotentiationCard.
-	self assert: ( game deckSizeOf: seba ) equals: 3.
+	self assert: ( game deckSizeOf: seba ) equals: 2.
 	

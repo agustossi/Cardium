@@ -22,7 +22,7 @@ testPlayerCantUseCardThatHasAlreadyUsed
 		withThis: deckGenerator.	
 	
 	game thePlayer: seba appliesPermanent: anOverloadCard on: seba.
-	game thePlayer: seba appliesPermanent: anOverloadCard on: seba.
+	
 	self
 		should: [ game thePlayer: seba appliesPermanent: anOverloadCard on: seba ]
 		raise: GameError

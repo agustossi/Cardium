@@ -1,3 +1,0 @@
-accessing
-allPlayersPositions
-	^ playerPositions.

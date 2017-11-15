@@ -1,0 +1,3 @@
+initialization
+pickTwoCards
+	^ cardsToBeUsed.

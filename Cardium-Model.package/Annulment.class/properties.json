@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"card",
-		"player"
-	],
+	"instvars" : [ ],
 	"name" : "Annulment",
 	"type" : "normal"
 }
