@@ -1,4 +1,4 @@
-as yet unclassified
+adding
 add: aCard onEffectingCardsTo: aPlayer 
 	| cards |
 	cards := cardsAffectingPlayers at: aPlayer.

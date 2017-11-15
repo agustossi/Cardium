@@ -1,4 +1,4 @@
-as yet unclassified
+calculating
 calculateNewPositionUsing: currentPosition inThis: aBoard havingThisNew: position
 	
 	
@@ -6,7 +6,7 @@ calculateNewPositionUsing: currentPosition inThis: aBoard havingThisNew: positio
 	oldTile := currentPosition tiles.
 	oldSumOfTiles := currentPosition totalTiles.	
 	
-	newTile := self  calculateNewTileUsing: oldTile inThis: aBoard  havingThisNew: position.
+	newTile := self  calculateNewTileUsing: oldSumOfTiles  inThis: aBoard  havingThisNew: position.
 	newSumOfTiles:= self calculateNewSumOfTilesUsing: oldSumOfTiles havingThisNew: position.
 	newRound:= self calculateNewRoundUsing: newSumOfTiles inThis: aBoard.
 	

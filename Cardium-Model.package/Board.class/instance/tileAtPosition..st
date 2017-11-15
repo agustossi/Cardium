@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 tileAtPosition: aPosition 
-	^tiles at: aPosition
+	^ tiles at: aPosition

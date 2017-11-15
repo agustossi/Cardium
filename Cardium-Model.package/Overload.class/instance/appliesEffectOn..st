@@ -1,3 +1,3 @@
-as yet unclassified
+action
 appliesEffectOn: thisThrow 
 	^ (thisThrow - 2).

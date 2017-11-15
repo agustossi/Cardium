@@ -1,3 +1,3 @@
-as yet unclassified
-appliesEffectTo: aPlayer on: aGame 
-	aGame move: aPlayer tiles:4. 
+affecting
+appliesEffectTo: aPlayer on: aGame
+	aGame move: aPlayer tiles: (4 / aGame cushioningFactor) ceiling

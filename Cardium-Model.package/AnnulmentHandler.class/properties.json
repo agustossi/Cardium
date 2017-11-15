@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "CardHandler",
+	"category" : "Cardium-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"card",
+		"player"
+	],
+	"name" : "AnnulmentHandler",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+type
+	^ (WormholeHandler new).

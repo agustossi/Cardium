@@ -11,6 +11,18 @@ testCardGivingTileEffectAppliedToThisPlayerIsWorking
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: seba.
 	aSpeedCard := Speed new.
-	game := Game rounds: 1 playedBy: totalPlayers withThisBoard: board usingDice: dice withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: aSpeedCard; yourself)).
+	game := Game
+		rounds: 1
+		playedBy: totalPlayers
+		withThisBoard: board
+		usingDice: dice
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: aSpeedCard;
+						yourself)).
 	game nextTurn: seba.
-	self assert: (game assertThePlayersDeckHasThis: aSpeedCard ) equals: game.
+	self
+		assert: (game assertThePlayers: seba deckHasThis: aSpeedCard)
+		equals: true

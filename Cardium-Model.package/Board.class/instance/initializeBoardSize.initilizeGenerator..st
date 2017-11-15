@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initializeBoardSize: size initilizeGenerator: aTileGenerator 
 
 	numberOfTiles:= size.

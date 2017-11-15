@@ -1,7 +1,7 @@
-as yet unclassified
-applyPermanentEffectsOn: aPlayer withThisThrow: diceThrow 
-	| cards finalNumber value |
-	cards:= cardsAffectingPlayers at: aPlayer.
-	value:=diceThrow.
-	finalNumber:= cards do: [ :card | value:=card appliesEffectOn: value ].
-	^ value.
+action
+applyPermanentEffectsOn: aPlayer withThisThrow: diceThrow
+	| cards |
+	cards := cardsAffectingPlayers at: aPlayer.
+	^ cards
+		inject: diceThrow
+		into: [ :start :card | card appliesEffectOn: start ]

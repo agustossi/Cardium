@@ -17,7 +17,11 @@
 		"positionCalculator",
 		"playersDecks",
 		"cardsAffectingPlayers",
-		"deck"
+		"deck",
+		"tileHandler",
+		"cardHandler",
+		"lastPlay",
+		"globalPermanentCards"
 	],
 	"name" : "Game",
 	"type" : "normal"
