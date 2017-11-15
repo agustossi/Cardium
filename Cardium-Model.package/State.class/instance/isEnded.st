@@ -1,3 +1,3 @@
-accessing
+testing
 isEnded
 	^ self subclassResponsibility

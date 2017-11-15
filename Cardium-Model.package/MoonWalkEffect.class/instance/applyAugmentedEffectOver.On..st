@@ -1,4 +1,4 @@
-action
+affecting
 applyAugmentedEffectOver: aPlayer On: aGame 
 	| players onlyAffectThisPlayers |
 	players := aGame players.

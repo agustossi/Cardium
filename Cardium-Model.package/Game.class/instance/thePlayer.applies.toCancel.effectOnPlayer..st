@@ -9,3 +9,4 @@ thePlayer: aPlayer applies: anAnnulment toCancel: aCard effectOnPlayer: aTarget
 	
 	allCardsUsed add: anAnnulmentEffect.
 	lastPlay := allCardsUsed.
+	
