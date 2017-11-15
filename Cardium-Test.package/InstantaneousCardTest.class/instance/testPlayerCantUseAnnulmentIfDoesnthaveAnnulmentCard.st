@@ -3,7 +3,7 @@ testPlayerCantUseAnnulmentIfDoesnthaveAnnulmentCard
 	| agus aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anAnnulmentCard deckGenerator cards aSpeedCard |
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
-	aCardGivingTile := CardGiving new.
+	aCardGivingTile := CardGivingEffect new.
 	aSpeedCard:= Speed new.
 	anAnnulmentCard := Annulment new.
 	cards := OrderedCollection new.

@@ -5,7 +5,7 @@ testWhenCushioningOverload3SpeedAreAffectingPlayerthrows4SetpsInSpeedUpEndsIn7
 	aCushioningCard := Cushioning new.
 	anOverloadCard := Overload new.
 	aSpeedCard := Speed new.
-	aSpeedUpTile := SpeedUp new.
+	aSpeedUpTile := SpeedUpEffect new.
 	cards := OrderedCollection new.	
 	cards add: aCushioningCard.
 	cards add: anOverloadCard.
@@ -14,7 +14,7 @@ testWhenCushioningOverload3SpeedAreAffectingPlayerthrows4SetpsInSpeedUpEndsIn7
 	cards add: aSpeedCard.
 	
 	boardGenerator := TileFixedGenerator using: aSpeedUpTile.
-	deckGenerator := DeckFixedGeneratorForTesting using: cards.
+	deckGenerator := DeckFixedGenerator using: cards.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 3.
 	dice1 := Dice faces: 6 rollingFrom: generator.

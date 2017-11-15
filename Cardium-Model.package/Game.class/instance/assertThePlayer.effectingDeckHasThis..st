@@ -1,7 +1,8 @@
 asserting
-assertThePlayer: aPlayer effectingDeckHasThis: aCard 
+assertThePlayer: aPlayer effectingDeckHasThis: aCard
 	| cards |
-	cards:= cardsAffectingPlayers at: aPlayer.
-	Transcript show: cards.
-	cards indexOf: aCard ifAbsent: [ GameError signal: 'Player isnt being affected by this card' ].
-	^ true.
+	cards := cardsAffectingPlayers at: aPlayer.
+	cards
+		indexOf: aCard
+		ifAbsent: [ GameError signal: 'Player isnt being affected by this card' ].
+	^ true

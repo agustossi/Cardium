@@ -3,12 +3,12 @@ testWhenCushioningCardIsAppliedWithSpeedUPPlayerMovesTwoMoreTiles
 	| aSpeedUpTile game seba board dice dice1 totalPlayers boardGenerator generator aCushioningCard deckGenerator agus cards|
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
-	aSpeedUpTile := SpeedUp new.
+	aSpeedUpTile := SpeedUpEffect new.
 	aCushioningCard := Cushioning new.
 	cards := OrderedCollection new.
 	cards add: aCushioningCard.
 	boardGenerator := TileFixedGenerator using: aSpeedUpTile.
-	deckGenerator := DeckFixedGeneratorForTesting using: cards.
+	deckGenerator := DeckFixedGenerator using: cards.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.

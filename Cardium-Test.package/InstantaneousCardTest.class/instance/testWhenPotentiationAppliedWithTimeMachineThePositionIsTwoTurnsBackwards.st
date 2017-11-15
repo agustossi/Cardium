@@ -3,7 +3,7 @@ testWhenPotentiationAppliedWithTimeMachineThePositionIsTwoTurnsBackwards
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards aPotentiationCard aTimeMachineTile  |
 	seba := Player named: 'sebastian'.	
 	
-	aTimeMachineTile := TimeMachine new.
+	aTimeMachineTile := TimeMachineEffect new.
 	aPotentiationCard := Potentiation new.	
 	cards := OrderedCollection new.	
 	cards add: aPotentiationCard.

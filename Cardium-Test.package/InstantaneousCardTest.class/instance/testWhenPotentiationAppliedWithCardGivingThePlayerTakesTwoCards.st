@@ -3,7 +3,7 @@ testWhenPotentiationAppliedWithCardGivingThePlayerTakesTwoCards
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards aPotentiationCard aCardGivingTile  |
 	seba := Player named: 'sebastian'.	
 	
-	aCardGivingTile := CardGiving new.
+	aCardGivingTile := CardGivingEffect new.
 	aPotentiationCard := Potentiation new.	
 	cards := OrderedCollection new.	
 	cards add: aPotentiationCard.

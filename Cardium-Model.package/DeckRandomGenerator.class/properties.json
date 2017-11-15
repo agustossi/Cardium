@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"aRandomGenerator",
 		"cardsToPick"
 	],
 	"name" : "DeckRandomGenerator",

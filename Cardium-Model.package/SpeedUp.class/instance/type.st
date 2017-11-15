@@ -1,3 +1,0 @@
-accessing
-type
-	^ (SpeedUpHandler new).

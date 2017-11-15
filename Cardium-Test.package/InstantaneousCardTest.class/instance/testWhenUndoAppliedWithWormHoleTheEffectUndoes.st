@@ -2,7 +2,7 @@ tests
 testWhenUndoAppliedWithWormHoleTheEffectUndoes
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards anUndoCard aWormholeTile |
 	seba := Player named: 'sebastian'.	
-	aWormholeTile := Wormhole new.
+	aWormholeTile := WormholeEffect new.
 	anUndoCard := Undo new.	
 	cards := OrderedCollection new.	
 	cards add: anUndoCard.

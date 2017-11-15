@@ -1,3 +1,0 @@
-accesing
-type
-	^ (AtomicBombHandler new)

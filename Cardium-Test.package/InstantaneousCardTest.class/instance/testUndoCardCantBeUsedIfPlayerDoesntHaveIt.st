@@ -3,7 +3,7 @@ testUndoCardCantBeUsedIfPlayerDoesntHaveIt
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards aSpeedUpTile aSpeedCard anUndoCard |
 	seba := Player named: 'sebastian'.
 	anUndoCard := Undo new.	
-	aSpeedUpTile := SpeedUp new.
+	aSpeedUpTile := SpeedUpEffect new.
 	aSpeedCard := Speed new.	
 	cards := OrderedCollection new.	
 	cards add: aSpeedCard.

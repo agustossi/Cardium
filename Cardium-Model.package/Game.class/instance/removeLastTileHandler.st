@@ -1,3 +1,3 @@
 removing
 removeLastTileHandler
-	tileHandler removeAt: (tileHandler size).
+	allTilesStepped removeAt: (allTilesStepped size).

@@ -1,3 +1,3 @@
-as yet unclassified
+instance creation
 using: anEffectlesTile 
 	^ self new initializeTile: anEffectlesTile.

@@ -2,7 +2,7 @@ tests
 testWhenTwoUndoAppliedWithSpeedUpTheEffectOfUndoUndoes
 	| game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards anUndoCard aSpeedUpTile |
 	seba := Player named: 'sebastian'.	
-	aSpeedUpTile := SpeedUp new.
+	aSpeedUpTile := SpeedUpEffect new.
 	anUndoCard := Undo new.	
 	cards := OrderedCollection new.	
 	cards add: anUndoCard.

@@ -1,3 +1,0 @@
-accessing
-tile
-	^ position tile.

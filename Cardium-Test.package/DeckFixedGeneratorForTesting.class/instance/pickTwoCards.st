@@ -1,3 +1,0 @@
-initialization
-pickTwoCards
-	^ cardsToBeUsed.

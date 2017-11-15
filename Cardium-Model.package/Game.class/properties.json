@@ -18,10 +18,10 @@
 		"playersDecks",
 		"cardsAffectingPlayers",
 		"deck",
-		"tileHandler",
-		"cardHandler",
+		"allCardsUsed",
 		"lastPlay",
-		"globalPermanentCards"
+		"globalPermanentCards",
+		"allTilesStepped"
 	],
 	"name" : "Game",
 	"type" : "normal"

@@ -3,7 +3,7 @@ testWhen2CushioningCardIsAppliedWithWormholePlayersMoveQuarterTheEffect
 	| aWormholeTile game seba board dice dice1 totalPlayers boardGenerator generator aCushioningCard deckGenerator agus cards |
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
-	aWormholeTile := Wormhole new.
+	aWormholeTile := WormholeEffect new.
 	aCushioningCard := Cushioning new.
 	cards := OrderedCollection new.
 	cards add: aCushioningCard.

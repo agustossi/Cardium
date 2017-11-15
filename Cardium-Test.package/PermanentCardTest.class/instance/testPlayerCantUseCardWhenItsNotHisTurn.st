@@ -3,7 +3,7 @@ testPlayerCantUseCardWhenItsNotHisTurn
 	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anOverloadCard deckGenerator agus cards|
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
-	aCardGivingTile := CardGiving new.
+	aCardGivingTile := CardGivingEffect new.
 	anOverloadCard := Overload new.	
 	cards := OrderedCollection new.
 	cards add: anOverloadCard.

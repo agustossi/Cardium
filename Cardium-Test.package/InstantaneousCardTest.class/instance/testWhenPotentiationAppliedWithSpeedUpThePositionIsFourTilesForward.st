@@ -2,7 +2,7 @@ tests
 testWhenPotentiationAppliedWithSpeedUpThePositionIsFourTilesForward
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards aPotentiationCard aSpeedUpTile |
 	seba := Player named: 'sebastian'.	
-	aSpeedUpTile := SpeedUp new.
+	aSpeedUpTile := SpeedUpEffect new.
 	aPotentiationCard := Potentiation new.	
 	cards := OrderedCollection new.	
 	cards add: aPotentiationCard.

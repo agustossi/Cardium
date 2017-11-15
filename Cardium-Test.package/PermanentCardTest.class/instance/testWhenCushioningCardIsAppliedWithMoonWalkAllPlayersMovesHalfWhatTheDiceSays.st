@@ -3,7 +3,7 @@ testWhenCushioningCardIsAppliedWithMoonWalkAllPlayersMovesHalfWhatTheDiceSays
 	| aMoonWalkTile game seba board dice dice1 totalPlayers boardGenerator generator aCushioningCard deckGenerator agus cards|
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'agustina'.
-	aMoonWalkTile := MoonWalk new.
+	aMoonWalkTile := MoonWalkEffect new.
 	aCushioningCard := Cushioning new.
 	cards := OrderedCollection new.
 	cards add: aCushioningCard.

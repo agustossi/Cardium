@@ -2,7 +2,7 @@ tests
 testCardGivingTileEffectAppliedToThisPlayerIsWorking
 	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator aSpeedCard |
 	seba := Player named: 'sebastian'.
-	aCardGivingTile := CardGiving new.
+	aCardGivingTile := CardGivingEffect new.
 	boardGenerator := TileFixedGenerator using: aCardGivingTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.

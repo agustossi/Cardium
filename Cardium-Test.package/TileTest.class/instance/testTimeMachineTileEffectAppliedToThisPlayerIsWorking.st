@@ -2,7 +2,7 @@ tests
 testTimeMachineTileEffectAppliedToThisPlayerIsWorking
 	| aTimeMachineTile game seba board dice dice1 totalPlayers boardGenerator generator |
 	seba := Player named: 'sebastian'.
-	aTimeMachineTile := TimeMachine new.
+	aTimeMachineTile := TimeMachineEffect new.
 	boardGenerator := TileFixedGenerator using: aTimeMachineTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.

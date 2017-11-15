@@ -2,7 +2,7 @@ tests
 testPlayerCantUseCardThatsNotInHisDeck
 	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anOverloadCard   deckGenerator cards aSpeedCard |
 	seba := Player named: 'sebastian'.
-	aCardGivingTile := CardGiving new.
+	aCardGivingTile := CardGivingEffect new.
 	anOverloadCard := Overload new.
 	aSpeedCard:=Speed new.	
 	cards := OrderedCollection new.

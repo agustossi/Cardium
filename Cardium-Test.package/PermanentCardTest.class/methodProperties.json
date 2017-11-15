@@ -1,15 +1,15 @@
 {
 	"instance" : {
-		"testPlayerCantUseCardThatsNotInHisDeck" : "AgustinaTossi 11/12/2017 20:43",
-		"testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate" : "AgustinaTossi 11/11/2017 17:18",
-		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "AgustinaTossi 11/11/2017 17:26",
-		"testPlayerCantUseCardWhenItsNotHisTurn" : "AgustinaTossi 11/11/2017 17:01",
-		"testPlayerCantUseCardThatHasAlreadyUsed" : "AgustinaTossi 11/14/2017 21:41",
-		"testWhenCushioningCardIsAppliedWithSpeedUPPlayerMovesTwoMoreTiles" : "AgustinaTossi 11/14/2017 20:45",
-		"testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/11/2017 17:21",
-		"testWhenCushioningCardIsAppliedWithMoonWalkAllPlayersMovesHalfWhatTheDiceSays" : "AgustinaTossi 11/14/2017 20:11",
-		"testWhen2CushioningCardIsAppliedWithWormholePlayersMoveQuarterTheEffect" : "AgustinaTossi 11/14/2017 21:40",
-		"testWhenOverloadCardIsAppliedToOtherPlayerThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/11/2017 17:25"
+		"testPlayerCantUseCardThatsNotInHisDeck" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "AgustinaTossi 11/15/2017 17:04",
+		"testPlayerCantUseCardWhenItsNotHisTurn" : "AgustinaTossi 11/15/2017 17:04",
+		"testPlayerCantUseCardThatHasAlreadyUsed" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenCushioningCardIsAppliedWithSpeedUPPlayerMovesTwoMoreTiles" : "AgustinaTossi 11/15/2017 17:23",
+		"testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenCushioningCardIsAppliedWithMoonWalkAllPlayersMovesHalfWhatTheDiceSays" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhen2CushioningCardIsAppliedWithWormholePlayersMoveQuarterTheEffect" : "AgustinaTossi 11/15/2017 17:03",
+		"testWhenOverloadCardIsAppliedToOtherPlayerThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/15/2017 17:04"
 	},
 	"class" : { }
 }

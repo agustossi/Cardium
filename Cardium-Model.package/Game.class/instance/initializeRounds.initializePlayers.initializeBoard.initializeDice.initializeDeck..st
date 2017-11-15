@@ -15,6 +15,6 @@ initializeRounds: aRound initializePlayers: somePlayers initializeBoard: aBoard 
 	self playersPositionInizialization.
 	self playersDecksInizialization: deckGenerator.
 	self cardsAffectingPlayersInitialization.
-	tileHandler := OrderedCollection new.
-	cardHandler := OrderedCollection new.
+	allTilesStepped := OrderedCollection new.
+	allCardsUsed := OrderedCollection new.
 	globalPermanentCards := OrderedCollection new.

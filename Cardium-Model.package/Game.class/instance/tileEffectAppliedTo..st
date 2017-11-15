@@ -6,5 +6,5 @@ tileEffectAppliedTo: aPlayer
 	currentPosition := (self positionOf: aPlayer).
 	currentTile := board tileAtPosition:(currentPosition tiles).
 	currentTile appliesEffectTo: aPlayer on: self.
-	tileHandler add: (currentTile type).
-	lastPlay := tileHandler.
+	allTilesStepped add: currentTile.
+	lastPlay := allTilesStepped.

@@ -3,7 +3,7 @@ testWhenUndoAppliedWithTimeMachineTheEffectUndoes
 	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards anUndoCard aTimeMachine agus |
 	seba := Player named: 'sebastian'.	
 	agus := Player named: 'agustina'.
-	aTimeMachine := TimeMachine new.
+	aTimeMachine := TimeMachineEffect new.
 	anUndoCard := Undo new.	
 	cards := OrderedCollection new.	
 	cards add: anUndoCard.
