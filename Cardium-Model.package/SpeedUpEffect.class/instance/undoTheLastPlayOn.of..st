@@ -1,4 +1,4 @@
-affecting
+action
 undoTheLastPlayOn: aGame of: aPlayer 
 	| timeMachine |
 	timeMachine := TimeMachineEffect new.

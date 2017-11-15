@@ -1,4 +1,4 @@
-affecting
+action
 undoTheLastPlayOn: aGame of: aPlayer 
 	| timeMachine players |
 	players:= aGame players.

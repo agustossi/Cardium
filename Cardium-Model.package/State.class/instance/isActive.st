@@ -1,3 +1,3 @@
-accessing
+testing
 isActive
 	^ self subclassResponsibility
