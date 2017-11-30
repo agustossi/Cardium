@@ -1,12 +1,11 @@
 {
 	"instance" : {
 		"initializeWithFaces:rollingFrom:" : "SebastianCalderone 11/7/2017 12:24",
-		"assertMustBeInGivenRange:" : "agustossi 11/7/2017 19:35",
 		"faceValue" : "SebastianCalderone 11/7/2017 13:26",
 		"numberOfFaces" : "sebastiancalderone 9/16/2017 17:27"
 	},
 	"class" : {
-		"faces:rollingFrom:" : "SebastianCalderone 11/7/2017 13:24",
+		"faces:rollingFrom:" : "AgustinaTossi 11/15/2017 19:20",
 		"assertShouldBeGreaterThanZero:" : "agustossi 11/7/2017 19:34",
 		"faces:" : "SebastianCalderone 11/7/2017 13:24"
 	}

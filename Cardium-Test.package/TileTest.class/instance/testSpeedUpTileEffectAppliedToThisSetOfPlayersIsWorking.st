@@ -2,7 +2,7 @@ tests
 testSpeedUpTileEffectAppliedToThisSetOfPlayersIsWorking
 	| aSpeedUpTile game seba board dice dice1 totalPlayers boardGenerator generator |
 	seba := Player named: 'sebastian'.
-	aSpeedUpTile := SpeedUp new.
+	aSpeedUpTile := SpeedUpEffect new.
 	boardGenerator := TileFixedGenerator using: aSpeedUpTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
@@ -15,7 +15,7 @@ testSpeedUpTileEffectAppliedToThisSetOfPlayersIsWorking
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: Speed new).
+		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
 	game nextTurn: seba.

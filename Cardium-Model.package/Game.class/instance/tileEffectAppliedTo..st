@@ -1,4 +1,4 @@
-as yet unclassified
+action
 tileEffectAppliedTo: aPlayer 
 	| positionHistory currentPosition currentTile |
 	self assertIsTheTurnof: aPlayer.
@@ -6,5 +6,5 @@ tileEffectAppliedTo: aPlayer
 	currentPosition := (self positionOf: aPlayer).
 	currentTile := board tileAtPosition:(currentPosition tiles).
 	currentTile appliesEffectTo: aPlayer on: self.
-	"currentTile appliesEffectOn: playerPositions playing:aPlayer."
-	
+	allTilesStepped add: currentTile.
+	lastPlay := allTilesStepped.

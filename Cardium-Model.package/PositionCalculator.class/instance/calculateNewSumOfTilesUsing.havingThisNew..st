@@ -1,4 +1,4 @@
-as yet unclassified
+calculating
 calculateNewSumOfTilesUsing: currentPosition havingThisNew: position
 
 	^ (position + currentPosition).

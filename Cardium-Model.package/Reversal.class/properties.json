@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PermanentCard",
+	"category" : "Cardium-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Reversal",
+	"type" : "normal"
+}

@@ -3,7 +3,7 @@ testAtomicBombTileEffectAppliedToThisPlayerIsWorking
 	| anAtomicBombTile game seba board dice dice1 totalPlayers agus boardGenerator generator |
 	seba := Player named: 'sebastian'.
 	agus := Player named: 'Agustina'.
-	anAtomicBombTile := AtomicBomb new.
+	anAtomicBombTile := AtomicBombEffect new.
 	boardGenerator := TileFixedGenerator using: anAtomicBombTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
@@ -17,7 +17,7 @@ testAtomicBombTileEffectAppliedToThisPlayerIsWorking
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: Speed new).
+		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.

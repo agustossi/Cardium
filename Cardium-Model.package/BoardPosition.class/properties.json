@@ -2,11 +2,7 @@
 	"commentStamp" : "<historical>",
 	"super" : "Object",
 	"category" : "Cardium-Model",
-	"classinstvars" : [
-		"tile",
-		"sumOfTiles",
-		"round"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

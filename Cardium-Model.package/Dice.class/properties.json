@@ -2,13 +2,10 @@
 	"commentStamp" : "<historical>",
 	"super" : "Object",
 	"category" : "Cardium-Model",
-	"classinstvars" : [
-		"faces"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"value",
 		"faces",
 		"numberGenerator"
 	],

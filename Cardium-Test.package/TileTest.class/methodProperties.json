@@ -1,11 +1,12 @@
 {
 	"instance" : {
-		"testWormholeTileEffectAppliedToThisSetOfPlayersIsWorking" : "SebastianCalderone 11/8/2017 21:18",
-		"testAtomicBombTileEffectAppliedToThisPlayerIsWorking" : "SebastianCalderone 11/8/2017 21:18",
-		"testSpeedUpTileEffectAppliedToThisSetOfPlayersIsWorking" : "SebastianCalderone 11/8/2017 21:18",
-		"testEffectlesTileEffectAppliedToThisPlayerIsWorking" : "SebastianCalderone 11/8/2017 21:18",
-		"testMoonWalkTileEffectAppliedToThisPlayerIsWorking" : "SebastianCalderone 11/8/2017 21:18",
-		"testTimeMachineTileEffectAppliedToThisPlayerIsWorking" : "SebastianCalderone 11/8/2017 21:18"
+		"testWormholeTileEffectAppliedToThisSetOfPlayersIsWorking" : "AgustinaTossi 11/15/2017 17:03",
+		"testAtomicBombTileEffectAppliedToThisPlayerIsWorking" : "AgustinaTossi 11/15/2017 17:04",
+		"testCardGivingTileEffectAppliedToThisPlayerIsWorking" : "AgustinaTossi 11/15/2017 17:04",
+		"testSpeedUpTileEffectAppliedToThisSetOfPlayersIsWorking" : "AgustinaTossi 11/15/2017 17:04",
+		"testEffectlesTileEffectAppliedToThisPlayerIsWorking" : "AgustinaTossi 11/11/2017 16:55",
+		"testMoonWalkTileEffectAppliedToThisPlayerIsWorking" : "AgustinaTossi 11/15/2017 17:04",
+		"testTimeMachineTileEffectAppliedToThisPlayerIsWorking" : "AgustinaTossi 11/15/2017 17:04"
 	},
 	"class" : { }
 }

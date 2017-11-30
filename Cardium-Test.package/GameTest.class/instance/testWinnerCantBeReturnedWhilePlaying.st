@@ -8,7 +8,7 @@ testWinnerCantBeReturnedWhilePlaying
 	totalPlayers add: player0.
 	totalPlayers add: player1.
 	totalPlayers add: player2.
-	board := Board ofSize: 10 withThisGenerator: TileRandomGenerator new.
+	board := Board ofSize: 10 withThisGenerator: (TileFixedGenerator using: (Effectles new)).
 	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.
 	dice1 := Dice faces: 6.
@@ -18,7 +18,7 @@ testWinnerCantBeReturnedWhilePlaying
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: Speed new).
+		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
 	game nextTurn: player0.
 	self
 		should: [ game winnerOfTheGame ]

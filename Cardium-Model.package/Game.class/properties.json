@@ -14,7 +14,14 @@
 		"playerIndex",
 		"winner",
 		"playerPositions",
-		"positionCalculator"
+		"positionCalculator",
+		"playersDecks",
+		"cardsAffectingPlayers",
+		"deck",
+		"allCardsUsed",
+		"lastPlay",
+		"globalPermanentCards",
+		"allTilesStepped"
 	],
 	"name" : "Game",
 	"type" : "normal"

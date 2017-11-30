@@ -11,7 +11,7 @@ testGameCannotBePlayedWhenStateIsntActive
 	aEffectlesTile := Effectles new.
 	boardGenerator := TileFixedGenerator using: aEffectlesTile.
 	board := Board ofSize: 5 withThisGenerator: boardGenerator.
-	generator := FixedNumberGenerator startFrom: 6.
+	generator := FixedNumberGenerator startFrom: 5.
 	dice1 := Dice faces: 6 rollingFrom: generator.
 	dice := Array with: dice1.
 	game := Game
@@ -19,7 +19,7 @@ testGameCannotBePlayedWhenStateIsntActive
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: Speed new).
+		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
 	game nextTurn: pepito.
 	self
 		should: [ game nextTurn: seba ]

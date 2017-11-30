@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "InstantaneousCard",
+	"category" : "Cardium-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Undo",
+	"type" : "normal"
+}

@@ -1,4 +1,4 @@
-action
+accessing
 positionOf: aPlayer
 	| positionsHistory lastIndex |
 	positionsHistory := (playerPositions at: (aPlayer)).	

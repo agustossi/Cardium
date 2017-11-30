@@ -1,0 +1,27 @@
+{
+	"instance" : {
+		"testReversalAppliedOnMoonWalkEffectIsReversed" : "AgustinaTossi 11/30/2017 18:57",
+		"testReversalAppliedOnWormholeEffectIsReversed" : "AgustinaTossi 11/30/2017 19:02",
+		"testWhen2CushioningCardIsAppliedWithWormholePlayersMoveQuarterTheEffect" : "AgustinaTossi 11/15/2017 17:03",
+		"testTwoReversalAppliedOnMoonWalkEffectIsReversedTwice" : "AgustinaTossi 11/30/2017 19:10",
+		"testWhenCushioningCardIsAppliedWithMoonWalkAllPlayersMovesHalfWhatTheDiceSays" : "AgustinaTossi 11/15/2017 17:04",
+		"testReversalAppliedOnAtomicBombEffectStaysTheSame" : "AgustinaTossi 11/30/2017 18:29",
+		"testTileToApplyRevesalOnMustBeBetween1AndBoardSize" : "AgustinaTossi 11/30/2017 18:24",
+		"testPlayerCantUseCardThatHasAlreadyUsed" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenTwoReversalAppliedOnSpeedUpEffectIsReversedTwice" : "AgustinaTossi 11/30/2017 19:15",
+		"testReversalAppliedOnTimeMachineEffectStaysTheSame" : "AgustinaTossi 11/30/2017 18:31",
+		"testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/15/2017 17:04",
+		"testPlayerCantUseCardWhenItsNotHisTurn" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenOverloadCardIsAppliedToOtherPlayerThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/15/2017 17:04",
+		"testReversalAppliedOnEffectlesNothingHappens" : "AgustinaTossi 11/30/2017 18:27",
+		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenCushioningCardIsAppliedWithSpeedUPPlayerMovesTwoMoreTiles" : "AgustinaTossi 11/15/2017 17:23",
+		"testPlayerCantUseCardThatsNotInHisDeck" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenReversalAppliedOnCardGivingTilePlayerLoosesOneCard" : "AgustinaTossi 11/30/2017 19:23",
+		"testReversalAppliedOnSpeedUpEffectIsReversed" : "AgustinaTossi 11/30/2017 18:33",
+		"testWhenTwoReversalAppliedOnCardGivingTilePlayerPicksUpOneCard" : "AgustinaTossi 11/30/2017 19:36",
+		"testWhenTwoReversalAppliedOnWormholeEffectIsReversedTwice" : "AgustinaTossi 11/30/2017 19:16"
+	},
+	"class" : { }
+}
