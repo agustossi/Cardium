@@ -1,6 +1,10 @@
 {
 	"instance" : {
-		"appliesEffectOn:" : "AgustinaTossi 11/11/2017 14:11"
+		"initialize" : "SebastianCalderone 12/2/2017 00:27",
+		"protected" : "SebastianCalderone 12/2/2017 00:27",
+		"appliesEffectOn:" : "AgustinaTossi 11/11/2017 14:11",
+		"ofThisPlayer:hasToBeAnnuledOn:" : "SebastianCalderone 12/2/2017 00:29",
+		"state" : "SebastianCalderone 12/2/2017 00:29"
 	},
 	"class" : { }
 }
