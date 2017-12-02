@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"state"
-	],
-	"name" : "Speed",
+	"instvars" : [ ],
+	"name" : "Protection",
 	"type" : "normal"
 }

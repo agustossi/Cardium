@@ -2,14 +2,16 @@
 	"instance" : {
 		"testPlayerCantUseCardThatsNotInHisDeck" : "AgustinaTossi 11/15/2017 17:04",
 		"testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate" : "AgustinaTossi 11/15/2017 17:04",
-		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "AgustinaTossi 11/15/2017 17:04",
 		"testPlayerCantUseCardWhenItsNotHisTurn" : "AgustinaTossi 11/15/2017 17:04",
 		"testPlayerCantUseCardThatHasAlreadyUsed" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "AgustinaTossi 11/15/2017 17:04",
 		"testWhenCushioningCardIsAppliedWithSpeedUPPlayerMovesTwoMoreTiles" : "AgustinaTossi 11/15/2017 17:23",
 		"testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/15/2017 17:04",
 		"testWhenCushioningCardIsAppliedWithMoonWalkAllPlayersMovesHalfWhatTheDiceSays" : "AgustinaTossi 11/15/2017 17:04",
 		"testWhen2CushioningCardIsAppliedWithWormholePlayersMoveQuarterTheEffect" : "AgustinaTossi 11/15/2017 17:03",
-		"testWhenOverloadCardIsAppliedToOtherPlayerThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/15/2017 17:04"
+		"testWhenOverloadCardIsAppliedToOtherPlayerThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenSpeedCardIsCreatedStateIsUnprotected" : "SebastianCalderone 12/1/2017 20:13",
+		"testCannotUseOneAnullmentIfThePlayerHasOneProtectionAppliedToSpeedCard" : "SebastianCalderone 12/1/2017 20:44"
 	},
 	"class" : { }
 }

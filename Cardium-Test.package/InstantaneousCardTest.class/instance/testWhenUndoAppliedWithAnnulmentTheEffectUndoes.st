@@ -36,7 +36,7 @@ testWhenUndoAppliedWithAnnulmentTheEffectUndoes
 	game nextTurn: seba.
 	self assert: (game positionOf: seba) tiles equals: 8.
    self assert: (game positionOf: seba) rounds equals: 0.
-	game thePlayer: seba applies: anAnnulmentCard toCancel:aSpeedCard  effectOnPlayer: seba.
+	game thePlayer: seba applies: anAnnulmentCard toCancel: aSpeedCard  effectOnPlayer: seba.
 	game thePlayer: seba applies: anUndoCard.
 	game nextTurn: seba.
 	self assert: (game positionOf: seba) tiles equals: 13.

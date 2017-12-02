@@ -14,7 +14,7 @@
 		"testWhenUndoAppliedWithEffectlesNothingHappens" : "AgustinaTossi 11/13/2017 17:41",
 		"testWhenUndoAppliedWithSpeedUpTheEffectUndoes" : "AgustinaTossi 11/15/2017 17:04",
 		"testWhenUndoAppliedWithWormHoleTheEffectUndoes" : "AgustinaTossi 11/15/2017 17:03",
-		"testWhenUndoAppliedWithAnnulmentTheEffectUndoes" : "AgustinaTossi 11/15/2017 17:04",
+		"testWhenUndoAppliedWithAnnulmentTheEffectUndoes" : "SebastianCalderone 12/1/2017 20:43",
 		"testWhenAnnulmentIsUsedCardIsOutOfGame" : "AgustinaTossi 11/15/2017 17:04",
 		"testWhenTwoUndoAppliedWithSpeedUpTheEffectOfUndoUndoes" : "AgustinaTossi 11/15/2017 17:04",
 		"testWhenPotentiationAppliedWithAtomicBombNothingHappens" : "AgustinaTossi 11/15/2017 17:04",

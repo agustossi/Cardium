@@ -1,3 +1,3 @@
-accesing
+accessing
 cushioningFactor
-	^ (2 ** (globalPermanentCards size))
+	^ 2 ** globalPermanentCards size
