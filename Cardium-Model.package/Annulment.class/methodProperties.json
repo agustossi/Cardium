@@ -1,4 +1,8 @@
 {
-	"instance" : { },
+	"instance" : {
+		"isAppliedBy:toCancel:ofPlayer:onThis:" : "AgustinaTossi 12/5/2017 21:16",
+		"isAppliedBy:toCancel:onThis:" : "AgustinaTossi 12/5/2017 19:45",
+		"isAppliedBy:toCancelInvertedTile:onThis:" : "AgustinaTossi 12/5/2017 21:10"
+	},
 	"class" : { }
 }

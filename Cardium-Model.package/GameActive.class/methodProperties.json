@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"assertGameIsActive" : "AgustinaTossi 12/4/2017 18:38",
+		"assertIsTheTurnOf:" : "AgustinaTossi 12/4/2017 18:09",
+		"initializePlayer:" : "AgustinaTossi 12/4/2017 18:23",
+		"winner" : "AgustinaTossi 12/4/2017 17:36"
+	},
+	"class" : {
+		"whilePlaying:" : "AgustinaTossi 12/4/2017 18:28"
+	}
+}

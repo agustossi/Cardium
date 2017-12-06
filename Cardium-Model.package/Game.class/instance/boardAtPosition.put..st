@@ -1,3 +1,3 @@
-as yet unclassified
+action
 boardAtPosition: aPosition put: newTile 
 	board replaceTileAtPosition: aPosition withThis: newTile.

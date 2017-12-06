@@ -1,0 +1,3 @@
+removing
+removeGlobalPermanentCard
+	globalPermanentCards removeLast.

@@ -1,7 +1,10 @@
 tests
 testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded
-	| game player board dice totalPlayers generator dice1 anEffectlesTile |
-	player := Player named: 'pepito'.
+	| game player board dice totalPlayers generator dice1 anEffectlesTile cards deckGenerator |
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	player := Player named: 'pepito' calculatingDeckWith: deckGenerator.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: player.
 	anEffectlesTile := Effectles new.
@@ -15,7 +18,16 @@ testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	game nextTurn: player.
 	game isWinner: player.
-	self deny: game isActive
+	self
+		should: [ game isActive ]
+		raise: GameError
+		withExceptionDo:
+			[ :signal | self assert: signal messageText equals: 'Game has finished' ]

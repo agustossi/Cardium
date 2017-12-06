@@ -1,14 +1,19 @@
 tests
 testWinnerCantBeReturnedWhilePlaying
-	| game board dice dice1 player1 player2 totalPlayers player0 generator |
-	player0 := Player named: 'pepito'.
-	player1 := Player named: 'Agus'.
-	player2 := Player named: 'Seba'.
+	| game board dice dice1 player1 player2 totalPlayers player0 generator cards deckGenerator |
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	player0 := Player named: 'pepito' calculatingDeckWith: deckGenerator.
+	player1 := Player named: 'Agus' calculatingDeckWith: deckGenerator.
+	player2 := Player named: 'Seba' calculatingDeckWith: deckGenerator.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: player0.
 	totalPlayers add: player1.
 	totalPlayers add: player2.
-	board := Board ofSize: 10 withThisGenerator: (TileFixedGenerator using: (Effectles new)).
+	board := Board
+		ofSize: 10
+		withThisGenerator: (TileFixedGenerator using: Effectles new).
 	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.
 	dice1 := Dice faces: 6.
@@ -18,7 +23,12 @@ testWinnerCantBeReturnedWhilePlaying
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	game nextTurn: player0.
 	self
 		should: [ game winnerOfTheGame ]

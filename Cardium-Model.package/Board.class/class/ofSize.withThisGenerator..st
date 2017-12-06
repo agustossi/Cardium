@@ -1,4 +1,4 @@
 instance creation
 ofSize: size withThisGenerator: aTileGenerator
-	self assertBoardSizeIsGreaterThanZero: size.
+	self assertSizeIsGreaterThanZero: size.
 	^ self new initializeBoardSize: size initilizeGenerator: aTileGenerator 

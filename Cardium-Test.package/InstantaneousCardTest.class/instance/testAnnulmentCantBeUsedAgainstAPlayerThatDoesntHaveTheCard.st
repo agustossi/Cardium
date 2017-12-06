@@ -1,15 +1,17 @@
 tests
 testAnnulmentCantBeUsedAgainstAPlayerThatDoesntHaveTheCard
 	| agus aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anAnnulmentCard deckGenerator cards aSpeedCard |
-	seba := Player named: 'sebastian'.
-	agus := Player named: 'agustina'.
-	aCardGivingTile := CardGivingEffect new.
-	anAnnulmentCard := Annulment new.	
-	aSpeedCard:= Speed new.
+	anAnnulmentCard := Annulment new.
+	aSpeedCard := Speed new.
 	cards := OrderedCollection new.
 	cards add: anAnnulmentCard.
-	boardGenerator := TileFixedGenerator using: aCardGivingTile.
 	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	agus := Player named: 'agustina' calculatingDeckWith: deckGenerator.
+	aCardGivingTile := CardGivingEffect new.
+	
+	boardGenerator := TileFixedGenerator using: aCardGivingTile.
+	
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.
@@ -22,8 +24,10 @@ testAnnulmentCantBeUsedAgainstAPlayerThatDoesntHaveTheCard
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: deckGenerator.	
+		withThis: deckGenerator.
 	game nextTurn: seba.
-	
-	self should: [game thePlayer: seba applies: anAnnulmentCard toCancel: aSpeedCard effectOnPlayer: agus] raise: GameError withExceptionDo: [:signal | self assert: signal messageText equals: 'Player isnt being affected by this card'].
-	
+	self should: [ anAnnulmentCard isAppliedBy: seba toCancel: aSpeedCard ofPlayer: agus onThis: game ] raise: GameError
+		withExceptionDo: [ :signal | 
+			self
+				assert: signal messageText
+				equals: 'Player isnt being affected by this card' ]

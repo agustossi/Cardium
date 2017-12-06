@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"name"
+		"name",
+		"cardsAffectingDeck",
+		"deck"
 	],
 	"name" : "Player",
 	"type" : "normal"

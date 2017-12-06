@@ -1,6 +1,4 @@
 action
-undoTheLastPlayOn: aGame of: aPlayer 
-	| timeMachine |
-	timeMachine := TimeMachineEffect new.
-	timeMachine appliesEffectTo: aPlayer on: aGame.
-	aGame addLastTile: (UndoEffect new).
+undoTheLastPlayOn: aGame of: aPlayer
+	TimeMachineEffect new appliesEffectTo: aPlayer on: aGame.
+	aGame addLastTile: UndoEffect new

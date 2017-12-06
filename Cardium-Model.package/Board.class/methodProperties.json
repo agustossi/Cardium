@@ -6,7 +6,7 @@
 		"tileAtPosition:" : "AgustinaTossi 11/14/2017 20:33"
 	},
 	"class" : {
-		"ofSize:withThisGenerator:" : "SebastianCalderone 10/28/2017 14:08",
-		"assertBoardSizeIsGreaterThanZero:" : "agustossi 11/7/2017 19:38"
+		"ofSize:withThisGenerator:" : "AgustinaTossi 12/5/2017 19:34",
+		"assertSizeIsGreaterThanZero:" : "AgustinaTossi 12/5/2017 19:34"
 	}
 }

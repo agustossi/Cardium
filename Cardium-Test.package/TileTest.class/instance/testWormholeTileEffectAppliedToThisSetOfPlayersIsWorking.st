@@ -1,7 +1,10 @@
 tests
 testWormholeTileEffectAppliedToThisSetOfPlayersIsWorking
-	| aWormholeTile game seba board dice dice1 totalPlayers boardGenerator generator |
-	seba := Player named: 'sebastian'.
+	| aWormholeTile game seba board dice dice1 totalPlayers boardGenerator generator cards deckGenerator |
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
 	aWormholeTile := WormholeEffect new.
 	boardGenerator := TileFixedGenerator using: aWormholeTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
@@ -15,7 +18,12 @@ testWormholeTileEffectAppliedToThisSetOfPlayersIsWorking
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
 	game nextTurn: seba.

@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"undoTheLastPlayOn:of:" : "AgustinaTossi 11/15/2017 17:19",
-		"invertEffectOfTile:On:" : "AgustinaTossi 11/30/2017 18:53",
-		"dontAffectThisPlayer:fromThis:" : "SebastianCalderone 11/5/2017 16:35",
-		"applyAugmentedEffectOver:On:" : "AgustinaTossi 11/15/2017 17:02",
-		"appliesEffectTo:on:" : "AgustinaTossi 11/14/2017 20:00"
+		"undoTheLastPlayOn:of:" : "AgustinaTossi 12/3/2017 20:42",
+		"invertEffectOfTile:On:" : "AgustinaTossi 12/4/2017 17:06",
+		"applyAugmentedEffectOver:On:" : "AgustinaTossi 12/4/2017 17:05",
+		"assertIsInverted" : "AgustinaTossi 12/5/2017 19:18",
+		"appliesEffectTo:on:" : "AgustinaTossi 12/4/2017 17:07"
 	},
 	"class" : { }
 }

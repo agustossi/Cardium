@@ -1,4 +1,4 @@
 affecting
 applyAugmentedEffectOver: aPlayer On: aGame 
-	aGame pickUpFromMazeAndAsignTo: aPlayer.
+	aPlayer addToDeck: ((aGame deck) removeLast).
 	

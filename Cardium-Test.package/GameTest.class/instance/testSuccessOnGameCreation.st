@@ -1,7 +1,10 @@
 tests
 testSuccessOnGameCreation
-	| game player board dice dice1 dice2 totalPlayers |
-	player := Player named: 'pepito'.
+	| game player board dice dice1 dice2 totalPlayers cards deckGenerator |
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	player := Player named: 'pepito' calculatingDeckWith: deckGenerator.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: player.
 	board := Board ofSize: 10 withThisGenerator: TileRandomGenerator new.
@@ -13,7 +16,12 @@ testSuccessOnGameCreation
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	self
 		assert: game isActive;
 		assert: game dice equals: dice;

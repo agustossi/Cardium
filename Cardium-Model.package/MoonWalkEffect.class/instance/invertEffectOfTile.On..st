@@ -1,5 +1,3 @@
-as yet unclassified
-invertEffectOfTile: aTile On: aGame 
-	| anInvertedMoonWalk |
-	anInvertedMoonWalk := InvertedMoonWalkEffect new.
-	aGame boardAtPosition: aTile put: anInvertedMoonWalk.
+action
+invertEffectOfTile: aTile On: aGame
+	aGame boardAtPosition: aTile put: InvertedMoonWalkEffect new

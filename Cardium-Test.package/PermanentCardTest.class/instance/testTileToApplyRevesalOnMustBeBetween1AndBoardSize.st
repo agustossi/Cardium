@@ -1,14 +1,15 @@
 tests
 testTileToApplyRevesalOnMustBeBetween1AndBoardSize
-	| anEffectlesTile game seba board dice dice1 totalPlayers boardGenerator generator aReversalCard deckGenerator agus cards|
-	seba := Player named: 'sebastian'.
-	agus := Player named: 'agustina'.
+	| anEffectlesTile game seba board dice dice1 totalPlayers boardGenerator generator aReversalCard deckGenerator agus cards |
+	
 	anEffectlesTile := Effectles new.
-	aReversalCard := Reversal new.	
+	aReversalCard := Reversal new.
 	cards := OrderedCollection new.
 	cards add: aReversalCard.
 	boardGenerator := TileFixedGenerator using: anEffectlesTile.
 	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	agus := Player named: 'agustina' calculatingDeckWith: deckGenerator.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 3.
 	dice1 := Dice faces: 6 rollingFrom: generator.
@@ -22,9 +23,10 @@ testTileToApplyRevesalOnMustBeBetween1AndBoardSize
 		withThisBoard: board
 		usingDice: dice
 		withThis: deckGenerator.
-	
 	self
-		should: [ game thePlayer: seba applies: aReversalCard onTile: 14. ]
+		should: [ aReversalCard isAppliedBy: seba toReverseTile: 14 onThis: game. ]
 		raise: GameError
-		withExceptionDo:
-			[ :signal | self assert: signal messageText equals: 'Tile must be between 1 and board size' ]
+		withExceptionDo: [ :signal | 
+			self
+				assert: signal messageText
+				equals: 'Tile must be between 1 and board size' ]

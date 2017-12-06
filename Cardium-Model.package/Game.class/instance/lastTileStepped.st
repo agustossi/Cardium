@@ -1,3 +1,3 @@
 accessing
 lastTileStepped
-	^ allTilesStepped at: (allTilesStepped size).
+	^ allTilesStepped last.

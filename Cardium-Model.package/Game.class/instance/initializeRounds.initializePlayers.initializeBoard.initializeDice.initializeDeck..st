@@ -4,17 +4,13 @@ initializeRounds: aRound initializePlayers: somePlayers initializeBoard: aBoard 
 	players := somePlayers.
 	board := aBoard.
 	dice := aDice.
-	state := Active new.
+	state := GameActive whilePlaying: (somePlayers at: 1).
 	playerIndex := 1.
 	positionCalculator := PositionCalculator new.
 	playerPositions := Dictionary new.
-	playersDecks := Dictionary new.
-	cardsAffectingPlayers := Dictionary new.
 	deck := OrderedCollection new.
 	self initializeDeckWithThisGenerator: deckGenerator.
 	self playersPositionInizialization.
-	self playersDecksInizialization: deckGenerator.
-	self cardsAffectingPlayersInitialization.
 	allTilesStepped := OrderedCollection new.
 	allCardsUsed := OrderedCollection new.
 	globalPermanentCards := OrderedCollection new.

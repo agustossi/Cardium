@@ -1,4 +1,3 @@
 accessing
 winnerOfTheGame
-		self assertGameIsEnded.
-		^ winner
+	^ state winner

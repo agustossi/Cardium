@@ -1,4 +1,4 @@
-as yet unclassified
+affecting
 appliesEffectTo: aPlayer on: aGame 
 	| cushioningFactor |
 	cushioningFactor := aGame cushioningFactor.

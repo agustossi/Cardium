@@ -1,3 +1,3 @@
-as yet unclassified
+action
 invertEffectOfTile: aTile On: aGame 
 	"nothing happens here"

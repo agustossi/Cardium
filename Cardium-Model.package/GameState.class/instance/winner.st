@@ -1,0 +1,3 @@
+accessing
+winner
+	^ self subclassResponsibility

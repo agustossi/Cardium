@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "Effect",
 	"category" : "Cardium-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"removedCard"
+	],
 	"name" : "InvertedCardGivingEffect",
 	"type" : "normal"
 }

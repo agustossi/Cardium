@@ -1,4 +1,4 @@
-as yet unclassified
+action
 invertEffectOfTile: aTile On: aGame 
 	| aSpeedUpEffect |
 	aSpeedUpEffect := SpeedUpEffect new.

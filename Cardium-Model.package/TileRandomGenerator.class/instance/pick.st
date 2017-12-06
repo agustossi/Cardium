@@ -1,4 +1,4 @@
-initialization
+accessing
 pick
 	| tilesToPick anEffectlesTile anAtomicBombTile aMoonWalkTile aWormHoleTile aSpeedUpTile aTimeMachineTile  |
 	tilesToPick:= OrderedCollection new.

@@ -1,6 +1,6 @@
 affecting
-applyAugmentedEffectOver: aPlayer On: aGame 
-	| players onlyAffectThisPlayers |
+applyAugmentedEffectOver: aPlayer On: aGame
+	| players |
 	players := aGame players.
-	onlyAffectThisPlayers := players select: [:item | item ~= aPlayer  ].
-	onlyAffectThisPlayers do:[:player| aGame move: player tiles: -3]
+	(players copyWithout: aPlayer)
+		do: [ :player | aGame move: player tiles: -3 ]

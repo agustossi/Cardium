@@ -1,5 +1,3 @@
-as yet unclassified
-invertEffectOfTile: aTile On: aGame 
-	| anInvertedWormholeEffect |
-	anInvertedWormholeEffect := InvertedWormholeEffect new.
-	aGame boardAtPosition: aTile put: anInvertedWormholeEffect.
+action
+invertEffectOfTile: aTile On: aGame
+	aGame boardAtPosition: aTile put: (InvertedWormholeEffect new)

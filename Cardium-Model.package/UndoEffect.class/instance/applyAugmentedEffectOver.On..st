@@ -1,3 +1,3 @@
 affecting
 applyAugmentedEffectOver: aPlayer On: aGame 
-	aGame removeLastTileHandler.
+	aGame removeLastTileStepped.

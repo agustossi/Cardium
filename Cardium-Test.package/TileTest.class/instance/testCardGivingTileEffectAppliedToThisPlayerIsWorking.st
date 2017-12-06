@@ -1,7 +1,10 @@
 tests
 testCardGivingTileEffectAppliedToThisPlayerIsWorking
-	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator aSpeedCard |
-	seba := Player named: 'sebastian'.
+	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator aSpeedCard deckGenerator cards|
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
 	aCardGivingTile := CardGivingEffect new.
 	boardGenerator := TileFixedGenerator using: aCardGivingTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
@@ -23,6 +26,4 @@ testCardGivingTileEffectAppliedToThisPlayerIsWorking
 						add: aSpeedCard;
 						yourself)).
 	game nextTurn: seba.
-	self
-		assert: (game assertThePlayers: seba deckHasThis: aSpeedCard)
-		equals: true
+	self shouldnt: [ seba assertHisDeckHas: aSpeedCard ] raise: GameError

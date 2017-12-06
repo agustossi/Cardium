@@ -1,8 +1,11 @@
 tests
 testPlayerCannotPlayIfItsNotHisTurn
-	| game seba board dice dice1 agus totalPlayers generator |
-	seba := Player named: 'sebastian'.
-	agus := Player named: 'agustina'.
+	| game seba board dice dice1 agus totalPlayers generator cards deckGenerator|
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	agus := Player named: 'agustina' calculatingDeckWith: deckGenerator.
 	board := Board ofSize: 10 withThisGenerator: TileRandomGenerator new.
 	generator := FixedNumberGenerator startFrom: 4.
 	dice1 := Dice faces: 6 rollingFrom: generator.
@@ -15,7 +18,12 @@ testPlayerCannotPlayIfItsNotHisTurn
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	self
 		should: [ game nextTurn: agus ]
 		raise: GameError

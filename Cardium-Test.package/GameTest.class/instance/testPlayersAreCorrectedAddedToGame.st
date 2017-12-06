@@ -1,9 +1,14 @@
 tests
 testPlayersAreCorrectedAddedToGame
-	| game board dice dice1 dice2 player1 player2 totalPlayers gameCreator |
-	gameCreator := Player named: 'pepito'.
-	player1 := Player named: 'Agus'.
-	player2 := Player named: 'Seba'.
+	| game board dice dice1 dice2 player1 player2 totalPlayers gameCreator cards deckGenerator|
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	gameCreator := Player
+		named: 'pepito'
+		calculatingDeckWith: deckGenerator.
+	player1 := Player named: 'Agus' calculatingDeckWith: deckGenerator.
+	player2 := Player named: 'Seba' calculatingDeckWith: deckGenerator.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: gameCreator.
 	totalPlayers add: player1.
@@ -17,5 +22,10 @@ testPlayersAreCorrectedAddedToGame
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	self assert: game numberOfPlayers equals: 3

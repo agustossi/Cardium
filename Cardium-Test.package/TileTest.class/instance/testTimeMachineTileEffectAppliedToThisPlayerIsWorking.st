@@ -1,7 +1,10 @@
 tests
 testTimeMachineTileEffectAppliedToThisPlayerIsWorking
-	| aTimeMachineTile game seba board dice dice1 totalPlayers boardGenerator generator |
-	seba := Player named: 'sebastian'.
+	| aTimeMachineTile game seba board dice dice1 totalPlayers boardGenerator generator cards deckGenerator |
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
 	aTimeMachineTile := TimeMachineEffect new.
 	boardGenerator := TileFixedGenerator using: aTimeMachineTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
@@ -15,7 +18,12 @@ testTimeMachineTileEffectAppliedToThisPlayerIsWorking
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
 	game nextTurn: seba.

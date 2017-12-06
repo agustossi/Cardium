@@ -1,3 +1,4 @@
 testing
 isActive
-	^ (state isActive)
+	^(state assertGameIsActive ).
+	

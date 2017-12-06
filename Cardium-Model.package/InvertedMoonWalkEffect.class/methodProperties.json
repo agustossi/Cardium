@@ -1,7 +1,10 @@
 {
 	"instance" : {
+		"undoTheLastPlayOn:of:" : "AgustinaTossi 12/3/2017 20:40",
 		"invertEffectOfTile:On:" : "AgustinaTossi 11/30/2017 19:11",
-		"appliesEffectTo:on:" : "AgustinaTossi 11/30/2017 18:55"
+		"applyAugmentedEffectOver:On:" : "AgustinaTossi 12/3/2017 20:40",
+		"assertIsInverted" : "AgustinaTossi 12/5/2017 18:49",
+		"appliesEffectTo:on:" : "AgustinaTossi 12/5/2017 17:13"
 	},
 	"class" : { }
 }

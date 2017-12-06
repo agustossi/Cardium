@@ -1,8 +1,7 @@
-as yet unclassified
+affecting
 appliesEffectTo: aPlayer on: aGame 
-	| players board onlyAffectThisPlayers cushioningFactor |
+	| players onlyAffectThisPlayers cushioningFactor |
 	players := aGame players.
-	board:= aGame board.
-	onlyAffectThisPlayers := players select: [:item | item ~= aPlayer  ].	
+	onlyAffectThisPlayers := players copyWithout: aPlayer.	
 	cushioningFactor := aGame cushioningFactor.
 	onlyAffectThisPlayers  do:[:player| aGame move: player tiles: ((3/cushioningFactor)ceiling)]
