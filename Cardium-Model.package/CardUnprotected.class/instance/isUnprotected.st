@@ -1,0 +1,3 @@
+testing
+isUnprotected
+	^ true.

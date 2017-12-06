@@ -1,13 +1,15 @@
 tests
 testPlayerCantUseCardThatHasAlreadyUsed
-	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anOverloadCard deckGenerator cards|
-	seba := Player named: 'sebastian'.
-	aCardGivingTile := CardGivingEffect new.
-	anOverloadCard := Overload new.	
+	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anOverloadCard deckGenerator cards sebasDeck cardsAffectingSeba usedCard |
+	anOverloadCard := Overload new.
 	cards := OrderedCollection new.
 	cards add: anOverloadCard.
-	boardGenerator := TileFixedGenerator using: aCardGivingTile.
 	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	aCardGivingTile := CardGivingEffect new.
+	
+	boardGenerator := TileFixedGenerator using: aCardGivingTile.
+	
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 3.
 	dice1 := Dice faces: 6 rollingFrom: generator.
@@ -19,12 +21,13 @@ testPlayerCantUseCardThatHasAlreadyUsed
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: deckGenerator.	
-	
-	game thePlayer: seba appliesPermanent: anOverloadCard on: seba.
-	
+		withThis: deckGenerator.
+	sebasDeck := seba deck.
+	cardsAffectingSeba := seba cardsAffectingHim.
+	usedCard := sebasDeck first.
+	((seba deck) first) isAppliedBy: seba toAffect: seba onThis: game.	
 	self
-		should: [ game thePlayer: seba appliesPermanent: anOverloadCard on: seba ]
+		should: [ usedCard isAppliedBy: seba toAffect: seba  onThis: game. ]
 		raise: GameError
 		withExceptionDo:
 			[ :signal | self assert: signal messageText equals: 'Player doesnt have this card' ]

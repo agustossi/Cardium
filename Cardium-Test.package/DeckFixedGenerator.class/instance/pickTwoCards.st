@@ -1,8 +1,6 @@
 initialization
 pickTwoCards
-   ^ cardsToBeUsed.
-
-"| cards |
-   cards := OrderedCollection new.
-	1 to: 2 do: [:index | cards add:(cardsToBeUsed at: 1)].
-	^ cards."
+	| cardsToBeReturned |
+	cardsToBeReturned := OrderedCollection new.
+	cardsToBeUsed do:[:card | cardsToBeReturned add:(card deepCopy)].
+	^ cardsToBeReturned.

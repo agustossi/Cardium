@@ -1,17 +1,18 @@
 tests
 testWhenAnnulmentIsUsedCardIsOutOfGame
-	| agus aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anAnnulmentCard deckGenerator cards aSpeedCard |
-	seba := Player named: 'sebastian'.
-	agus := Player named: 'agustina'.
+	| agus aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anAnnulmentCard deckGenerator cards aSpeedCard cardToBeCanceled|
 	aSpeedCard := Speed new.
 	aCardGivingTile := CardGivingEffect new.
-	anAnnulmentCard := Annulment new.	
+	anAnnulmentCard := Annulment new.
 	cards := OrderedCollection new.
-	
 	cards add: anAnnulmentCard.
 	cards add: aSpeedCard.
-	boardGenerator := TileFixedGenerator using: aCardGivingTile.
 	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	agus := Player named: 'agustina' calculatingDeckWith: deckGenerator.
+	
+	boardGenerator := TileFixedGenerator using: aCardGivingTile.
+	
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.
@@ -24,11 +25,17 @@ testWhenAnnulmentIsUsedCardIsOutOfGame
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: deckGenerator.	
+		withThis: deckGenerator.
 	game nextTurn: seba.
 	game nextTurn: agus.
-	game thePlayer: seba appliesPermanent: aSpeedCard on: agus.
+	((seba deck) second) isAppliedBy: seba toAffect: agus onThis: game.	
 	game nextTurn: seba.
-	game thePlayer: agus applies: anAnnulmentCard toCancel: aSpeedCard effectOnPlayer: agus.	
-	self should: [game assertThePlayer: agus effectingDeckHasThis: aSpeedCard] raise: GameError withExceptionDo: [:signal | self assert: signal messageText equals: 'Player isnt being affected by this card'].
-	
+	cardToBeCanceled := (agus cardsAffectingHim) first.	
+	((agus deck) first) isAppliedBy: agus toCancel:  ((agus cardsAffectingHim) first) ofPlayer: agus onThis: game.
+	self
+		should: [ agus assertHisAffectingDeckHas:  cardToBeCanceled ]
+		raise: GameError
+		withExceptionDo: [ :signal | 
+			self
+				assert: signal messageText
+				equals: 'Player isnt being affected by this card' ]

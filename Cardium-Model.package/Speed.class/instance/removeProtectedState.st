@@ -1,0 +1,3 @@
+removing
+removeProtectedState
+	state removeLast.

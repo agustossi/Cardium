@@ -1,3 +1,3 @@
 action
 appliesEffectOn: thisThrow 
-	^ thisThrow + 1.
+	^ thisThrow +1.

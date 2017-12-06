@@ -1,15 +1,26 @@
 {
 	"instance" : {
-		"testPlayerCantUseCardThatsNotInHisDeck" : "AgustinaTossi 11/15/2017 17:04",
-		"testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate" : "AgustinaTossi 11/15/2017 17:04",
-		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "AgustinaTossi 11/15/2017 17:04",
-		"testPlayerCantUseCardWhenItsNotHisTurn" : "AgustinaTossi 11/15/2017 17:04",
-		"testPlayerCantUseCardThatHasAlreadyUsed" : "AgustinaTossi 11/15/2017 17:04",
-		"testWhenCushioningCardIsAppliedWithSpeedUPPlayerMovesTwoMoreTiles" : "AgustinaTossi 11/15/2017 17:23",
-		"testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/15/2017 17:04",
-		"testWhenCushioningCardIsAppliedWithMoonWalkAllPlayersMovesHalfWhatTheDiceSays" : "AgustinaTossi 11/15/2017 17:04",
-		"testWhen2CushioningCardIsAppliedWithWormholePlayersMoveQuarterTheEffect" : "AgustinaTossi 11/15/2017 17:03",
-		"testWhenOverloadCardIsAppliedToOtherPlayerThePlayerMovesWhatTheDiceSaysMinusTwo" : "AgustinaTossi 11/15/2017 17:04"
+		"testTwoAnullmentsAppliedDontAffectIfThePlayerHasTwoProtectionAppliedToSpeedCard" : "SebastianCalderone 12/5/2017 21:37",
+		"testOneAnullmentDoesntAffectIfThePlayerHasOneProtectionAppliedToSpeedCard" : "SebastianCalderone 12/6/2017 10:41",
+		"testTwoAnullmentsAppliedAffectIfThePlayerHasOneProtectionAppliedToSpeedCard" : "SebastianCalderone 12/5/2017 21:37",
+		"testWhen2CushioningCardIsAppliedWithWormholePlayersMoveQuarterTheEffect" : "SebastianCalderone 12/5/2017 21:04",
+		"testTheCushioningsOfTheOtherPlayerDoesntGetProtected" : "SebastianCalderone 12/5/2017 21:09",
+		"testTwoAnullmentsAppliedDontAffectIfThePlayerHasTwoProtectionAppliedToOverloadCard" : "SebastianCalderone 12/6/2017 10:45",
+		"testOneAnullmentDoesntAffectIfThePlayerHasOneProtectionAppliedToOverload" : "SebastianCalderone 12/6/2017 10:41",
+		"testWhenCushioningCardIsAppliedWithMoonWalkAllPlayersMovesHalfWhatTheDiceSays" : "SebastianCalderone 12/5/2017 21:04",
+		"testTheCardsOfTheOtherPlayerDoesntGetProtected" : "SebastianCalderone 12/5/2017 21:37",
+		"testTwoAnullmentsAppliedAffectIfThePlayerHasOneProtectionAppliedToOverloadCard" : "SebastianCalderone 12/5/2017 21:37",
+		"testWhenSpeedCardIsCreatedStateIsUnprotected" : "SebastianCalderone 12/1/2017 20:13",
+		"testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate" : "SebastianCalderone 12/5/2017 20:43",
+		"testPlayerCantUseCardThatHasAlreadyUsed" : "SebastianCalderone 12/5/2017 20:45",
+		"testOneAnullmentDoesntAffectIfThePlayerHasOneProtectionAppliedToCushioning" : "SebastianCalderone 12/5/2017 21:12",
+		"testWhenOverloadCardIsAppliedThePlayerMovesWhatTheDiceSaysMinusTwo" : "SebastianCalderone 12/5/2017 20:44",
+		"testPlayerCantUseCardWhenItsNotHisTurn" : "SebastianCalderone 12/5/2017 20:40",
+		"testWhenOverloadCardIsAppliedToOtherPlayerThePlayerMovesWhatTheDiceSaysMinusTwo" : "SebastianCalderone 12/5/2017 20:44",
+		"testWhenSpeedCardIsAppliedThePlayerMovesOnePlusWhatTheDiceSays" : "SebastianCalderone 12/5/2017 20:44",
+		"testThreeAnullmentOverTwoProtectionsAppliedToSpeedCardSoCardIsOutOfGame" : "SebastianCalderone 12/5/2017 21:37",
+		"testWhenCushioningCardIsAppliedWithSpeedUPPlayerMovesTwoMoreTiles" : "SebastianCalderone 12/5/2017 21:04",
+		"testPlayerCantUseCardThatsNotInHisDeck" : "SebastianCalderone 12/5/2017 20:39"
 	},
 	"class" : { }
 }

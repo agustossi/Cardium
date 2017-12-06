@@ -1,7 +1,10 @@
 tests
 testEffectlesTileEffectAppliedToThisPlayerIsWorking
-	| anEffectlesTile game seba board dice dice1 totalPlayers boardGenerator generator |
-	seba := Player named: 'sebastian'.
+	| anEffectlesTile game seba board dice dice1 totalPlayers boardGenerator generator cards |
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
 	anEffectlesTile := Effectles new.
 	boardGenerator := TileFixedGenerator using: anEffectlesTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
@@ -15,7 +18,12 @@ testEffectlesTileEffectAppliedToThisPlayerIsWorking
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
 	game nextTurn: seba.

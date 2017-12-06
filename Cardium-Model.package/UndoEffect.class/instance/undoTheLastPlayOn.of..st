@@ -1,6 +1,6 @@
 action
 undoTheLastPlayOn: aGame of: aPlayer 
 	| lastPlay |
-	aGame removeLastTileHandler.
+	aGame removeLastTileStepped.
 	lastPlay := aGame lastPlay.
 	lastPlay undoTheLastPlayOn: aGame of: aPlayer.

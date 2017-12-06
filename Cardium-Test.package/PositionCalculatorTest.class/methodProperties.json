@@ -1,8 +1,8 @@
 {
 	"instance" : {
-		"testWhenComplitingARoundRoundIsCalculatedCorrectly" : "SebastianCalderone 11/2/2017 19:58",
-		"testWhenGoingBackwardsAfterCompletingARoundTheRoundIsDecreasedInOneIfTilePositionIsLowerThanBoardSize" : "SebastianCalderone 11/2/2017 19:58",
-		"testWhenCalculatingToMoveOneTileFromPositionZeroTileIsOneSumOfTilesIsOneAndRoundIsZero" : "SebastianCalderone 11/2/2017 19:58"
+		"testWhenComplitingARoundRoundIsCalculatedCorrectly" : "SebastianCalderone 12/3/2017 20:36",
+		"testWhenGoingBackwardsAfterCompletingARoundTheRoundIsDecreasedInOneIfTilePositionIsLowerThanBoardSize" : "SebastianCalderone 12/3/2017 20:37",
+		"testWhenCalculatingToMoveOneTileFromPositionZeroTileIsOneSumOfTilesIsOneAndRoundIsZero" : "SebastianCalderone 12/3/2017 20:36"
 	},
 	"class" : { }
 }

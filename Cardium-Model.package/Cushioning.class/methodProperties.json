@@ -1,4 +1,11 @@
 {
-	"instance" : { },
+	"instance" : {
+		"isAppliedBy:onThis:" : "SebastianCalderone 12/5/2017 21:04",
+		"initialize" : "SebastianCalderone 12/5/2017 19:15",
+		"removeProtectedState" : "SebastianCalderone 12/5/2017 19:23",
+		"protected" : "SebastianCalderone 12/5/2017 19:15",
+		"ofThisPlayer:hasToBeAnnuledOn:" : "SebastianCalderone 12/6/2017 10:50",
+		"state" : "SebastianCalderone 12/2/2017 13:30"
+	},
 	"class" : { }
 }

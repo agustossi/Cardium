@@ -1,10 +1,20 @@
 {
 	"instance" : {
-		"initialize:" : "sebastian 10/1/2017 16:40",
-		"name" : "AgustinaTossi 11/15/2017 19:31"
+		"initializePlayerNamed:withThis:" : "SebastianCalderone 12/4/2017 19:24",
+		"removeLastCardFromDeck" : "SebastianCalderone 12/4/2017 20:56",
+		"assertHisAffectingDeckHas:" : "SebastianCalderone 12/4/2017 20:25",
+		"name" : "AgustinaTossi 11/15/2017 19:31",
+		"addToDeck:" : "SebastianCalderone 12/4/2017 20:04",
+		"addOnAffectingDeck:" : "SebastianCalderone 12/4/2017 20:27",
+		"deck" : "SebastianCalderone 12/4/2017 19:45",
+		"assertHisDeckHas:" : "SebastianCalderone 12/4/2017 20:15",
+		"removeFromDeck:" : "SebastianCalderone 12/4/2017 20:28",
+		"removeFromAffectingDeck:" : "SebastianCalderone 12/4/2017 20:42",
+		"deckSize" : "SebastianCalderone 12/4/2017 19:31",
+		"cardsAffectingHim" : "SebastianCalderone 12/5/2017 20:00"
 	},
 	"class" : {
-		"assertShouldNotBeEmpty:" : "agustossi 11/7/2017 19:36",
-		"named:" : "sebastian 9/12/2017 20:31"
+		"named:calculatingDeckWith:" : "SebastianCalderone 12/4/2017 19:24",
+		"assertShouldNotBeEmpty:" : "agustossi 11/7/2017 19:36"
 	}
 }

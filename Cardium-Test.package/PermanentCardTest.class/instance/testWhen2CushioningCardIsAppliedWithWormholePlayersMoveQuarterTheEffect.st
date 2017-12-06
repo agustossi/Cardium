@@ -1,15 +1,16 @@
 tests
 testWhen2CushioningCardIsAppliedWithWormholePlayersMoveQuarterTheEffect
-	| aWormholeTile game seba board dice dice1 totalPlayers boardGenerator generator aCushioningCard deckGenerator agus cards |
-	seba := Player named: 'sebastian'.
-	agus := Player named: 'agustina'.
-	aWormholeTile := WormholeEffect new.
-	aCushioningCard := Cushioning new.
+	| aWormholeTile game seba board dice dice1 totalPlayers boardGenerator generator deckGenerator agus cards |
 	cards := OrderedCollection new.
-	cards add: aCushioningCard.
-	cards add: aCushioningCard.
-	boardGenerator := TileFixedGenerator using: aWormholeTile.
+	cards add: Cushioning new.
+	cards add: Cushioning new.
 	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	agus := Player named: 'agustina' calculatingDeckWith: deckGenerator.
+	aWormholeTile := WormholeEffect new.	
+	
+	boardGenerator := TileFixedGenerator using: aWormholeTile.
+	
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.
@@ -27,15 +28,11 @@ testWhen2CushioningCardIsAppliedWithWormholePlayersMoveQuarterTheEffect
 	self assert: (game positionOf: seba) tiles equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.
 	self assert: (game positionOf: agus) tiles equals: 0.
-	
-	game thePlayer: seba appliesPermanent: aCushioningCard.	
+	(seba deck first) isAppliedBy: seba onThis: game.
 	game nextTurn: seba.
-	game thePlayer: agus appliesPermanent: aCushioningCard.
+	(agus deck first) isAppliedBy: agus onThis: game.	
 	game nextTurn: agus.
-	
 	self assert: (game positionOf: seba) rounds equals: -1.
 	self assert: (game positionOf: seba) tiles equals: 9.
 	self assert: (game positionOf: agus) rounds equals: 0.
-	self assert: (game positionOf: agus) tiles equals: 1.
-	
-	
+	self assert: (game positionOf: agus) tiles equals: 1

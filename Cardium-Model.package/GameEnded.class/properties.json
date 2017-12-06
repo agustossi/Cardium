@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "GameState",
+	"category" : "Cardium-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"winner"
+	],
+	"name" : "GameEnded",
+	"type" : "normal"
+}

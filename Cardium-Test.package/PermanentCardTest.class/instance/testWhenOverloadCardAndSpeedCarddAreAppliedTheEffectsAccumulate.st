@@ -1,15 +1,18 @@
 tests
 testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate
-	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anOverloadCard deckGenerator aSpeedCard cards|
-	seba := Player named: 'sebastian'.
-	aCardGivingTile := CardGivingEffect new.
+	| aCardGivingTile game seba board dice dice1 totalPlayers boardGenerator generator anOverloadCard deckGenerator aSpeedCard cards |
+	
 	anOverloadCard := Overload new.
 	aSpeedCard := Speed new.
-	cards := OrderedCollection new. 
+	cards := OrderedCollection new.
 	cards add: anOverloadCard.
 	cards add: aSpeedCard.
-	boardGenerator := TileFixedGenerator using: aCardGivingTile.
 	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	aCardGivingTile := CardGivingEffect new.
+	
+	boardGenerator := TileFixedGenerator using: aCardGivingTile.
+	
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.
@@ -25,9 +28,9 @@ testWhenOverloadCardAndSpeedCarddAreAppliedTheEffectsAccumulate
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
 	game nextTurn: seba.
-	game thePlayer: seba appliesPermanent: aSpeedCard on: seba.
+	((seba deck) second) isAppliedBy: seba toAffect: seba onThis: game.	
 	game nextTurn: seba.
-	game thePlayer: seba appliesPermanent: anOverloadCard on: seba.
+	((seba deck) first) isAppliedBy: seba toAffect: seba onThis: game.	
 	game nextTurn: seba.
 	self assert: (game positionOf: seba) rounds equals: 0.
-	self assert: (game positionOf: seba) tiles equals: 6.
+	self assert: (game positionOf: seba) tiles equals: 6

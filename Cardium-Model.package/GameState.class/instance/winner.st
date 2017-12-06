@@ -1,0 +1,3 @@
+asserting
+winner
+	^ self subclassResponsibility.

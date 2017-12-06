@@ -1,6 +1,12 @@
 {
 	"instance" : {
-		"appliesEffectOn:" : "AgustinaTossi 11/11/2017 14:11"
+		"initialize" : "SebastianCalderone 12/5/2017 19:15",
+		"isAppliedBy:toAffect:onThis:" : "SebastianCalderone 12/5/2017 20:48",
+		"protected" : "SebastianCalderone 12/5/2017 19:15",
+		"appliesEffectOn:" : "AgustinaTossi 11/11/2017 14:11",
+		"hasToBeRemovedFromCardsAffecting:" : "SebastianCalderone 12/6/2017 10:01",
+		"removeProtectedState" : "SebastianCalderone 12/5/2017 19:28",
+		"state" : "SebastianCalderone 12/2/2017 00:29"
 	},
 	"class" : { }
 }
