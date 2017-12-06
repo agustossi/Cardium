@@ -1,3 +1,3 @@
-as yet unclassified
+adding
 protected
-	state add: (Protected new).
+	state add: (CardProtected new).

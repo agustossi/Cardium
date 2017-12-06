@@ -1,0 +1,3 @@
+removing
+removeLastCardFromDeck
+	deck removeLast.

@@ -1,15 +1,16 @@
 tests
 testWhenUndoAppliedWithTimeMachineTheEffectUndoes
-	|   game seba board dice dice1 totalPlayers boardGenerator generator  deckGenerator cards anUndoCard aTimeMachine agus |
-	seba := Player named: 'sebastian'.	
-	agus := Player named: 'agustina'.
-	aTimeMachine := TimeMachineEffect new.
-	anUndoCard := Undo new.	
-	cards := OrderedCollection new.	
+	| game seba board dice dice1 totalPlayers boardGenerator generator deckGenerator cards anUndoCard aTimeMachine agus |
+	anUndoCard := Undo new.
+	cards := OrderedCollection new.
 	cards add: anUndoCard.
+	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	agus := Player named: 'agustina' calculatingDeckWith: deckGenerator.
+	aTimeMachine := TimeMachineEffect new.
 	
 	boardGenerator := TileFixedGenerator using: aTimeMachine.
-	deckGenerator := DeckFixedGenerator using: cards.
+	
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
 	generator := FixedNumberGenerator startFrom: 0.
 	dice1 := Dice faces: 6 rollingFrom: generator.
@@ -22,12 +23,12 @@ testWhenUndoAppliedWithTimeMachineTheEffectUndoes
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: deckGenerator.		
+		withThis: deckGenerator.
 	self assert: (game positionOf: seba) tiles equals: 0.
-   self assert: (game positionOf: seba) rounds equals: 0.		
+	self assert: (game positionOf: seba) rounds equals: 0.
 	game nextTurn: seba.
 	self assert: (game positionOf: seba) tiles equals: 0.
-   self assert: (game positionOf: seba) rounds equals: 0.	
-	game thePlayer: seba applies: anUndoCard.
+	self assert: (game positionOf: seba) rounds equals: 0.
+	(seba deck first) isAppliedBy: seba onThis: game.
 	self assert: (game positionOf: seba) tiles equals: 1.
-   self assert: (game positionOf: seba) rounds equals: 0.	
+	self assert: (game positionOf: seba) rounds equals: 0

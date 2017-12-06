@@ -1,7 +1,14 @@
 {
 	"instance" : {
-		"testNameShouldntBeEmpty" : "agustossi 11/7/2017 20:06",
-		"testWhenIAskForPlayerNameIsReturned" : "sebastian 9/6/2017 20:50"
+		"testWhenPlayerAddsCardToDeckHisDeckContainsNewCard" : "SebastianCalderone 12/5/2017 19:59",
+		"testWhenCardIsRemovedFromPlayersAffectingDeckItsNotOnHisAffectingDeck" : "SebastianCalderone 12/5/2017 19:58",
+		"testWhenPlayerAddsCardToDeckHisDeckIncreaseSize" : "SebastianCalderone 12/5/2017 19:59",
+		"testNameShouldntBeEmpty" : "SebastianCalderone 12/5/2017 19:57",
+		"testWhenPlayerIsCreatedHasTwoCardsOnDeck" : "SebastianCalderone 12/5/2017 19:59",
+		"testWhenLastCardIsRemovedFromPlayersDeckItsNoLongerOnHisDeck" : "SebastianCalderone 12/5/2017 19:58",
+		"testWhenCardIsRemovedFromPlayersDeckItsNotOnHisDeck" : "SebastianCalderone 12/5/2017 19:58",
+		"testWhenIAskForPlayerNameIsReturned" : "SebastianCalderone 12/4/2017 20:19",
+		"testWhenPlayerAddsCardToAffectingDeckHisAffectingDeckContainsNewCard" : "SebastianCalderone 12/5/2017 19:58"
 	},
 	"class" : { }
 }

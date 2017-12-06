@@ -1,0 +1,3 @@
+accessing
+deckSize
+	^ deck size.

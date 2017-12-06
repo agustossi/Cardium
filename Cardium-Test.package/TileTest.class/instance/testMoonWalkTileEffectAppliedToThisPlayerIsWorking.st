@@ -1,8 +1,11 @@
 tests
 testMoonWalkTileEffectAppliedToThisPlayerIsWorking
-	| aMoonWalkTile game seba board dice dice1 totalPlayers agus boardGenerator generator |
-	seba := Player named: 'sebastian'.
-	agus := Player named: 'Agustina'.
+	| aMoonWalkTile game seba board dice dice1 totalPlayers agus boardGenerator generator cards |
+	cards := OrderedCollection new.
+	cards add: Speed new.
+	deckGenerator := DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	agus := Player named: 'Agustina' calculatingDeckWith: deckGenerator.
 	aMoonWalkTile := MoonWalkEffect new.
 	boardGenerator := TileFixedGenerator using: aMoonWalkTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
@@ -17,7 +20,12 @@ testMoonWalkTileEffectAppliedToThisPlayerIsWorking
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: seba) tiles equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.

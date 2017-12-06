@@ -1,4 +1,4 @@
-action
+initialization
 initialize 
 	state := OrderedCollection new.
-	state add: (Unprotected new).
+	state add: (CardUnprotected new).

@@ -1,12 +1,13 @@
 tests
 testWhenComplitingARoundRoundIsCalculatedCorrectly
 
-	| positionCalculator anEffectlesTile boardGenerator board |
+	| positionCalculator anEffectlesTile boardGenerator board oldPosition newPosition |
 	positionCalculator := PositionCalculator new.
 	anEffectlesTile := Effectles new.
 	boardGenerator := TileFixedGenerator using: anEffectlesTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.	
-	self assert: (positionCalculator calculateNewSumOfTilesUsing: 9 havingThisNew: 1) equals: 10;
-		  assert: (positionCalculator calculateNewTileUsing: 9 inThis: board  havingThisNew: 1) equals: 10;
-		  assert: (positionCalculator calculateNewRoundUsing: 10 inThis: board) equals: 1.
-	 
+	oldPosition := BoardPosition tile: 0 totalTiles: 0  round: 0. 
+	newPosition := positionCalculator calculateNewPositionUsing: oldPosition inThis: board  havingThisNew: 12. 
+	self assert: (newPosition tiles) equals:2;
+		  assert: (newPosition rounds) equals:1;
+		  assert: (newPosition totalTiles) equals:12.	  

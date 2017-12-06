@@ -1,4 +1,4 @@
-initialization
+action
 pick
 	| tilesToPick anEffectlesTile anAtomicBombTile aMoonWalkTile aWormHoleTile aSpeedUpTile aTimeMachineTile  |
 	tilesToPick:= OrderedCollection new.
@@ -17,4 +17,4 @@ pick
 	73 to: 77 do: [:index | tilesToPick add: aMoonWalkTile  ].
 	78 to: 100 do: [:index | tilesToPick add: aTimeMachineTile ].
 	
-	^ tilesToPick at: (aRandomGenerator nextInt: 100)
+	^ tilesToPick at: (aRandomGenerator nextInt: 100).

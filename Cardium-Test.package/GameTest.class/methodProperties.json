@@ -1,15 +1,15 @@
 {
 	"instance" : {
-		"testPlayersAreCorrectedAddedToGame" : "AgustinaTossi 11/11/2017 16:54",
-		"testWhenGameIsCreatedEachPlayerHasTwoCards" : "AgustinaTossi 11/15/2017 19:07",
-		"testSuccessOnGameCreation" : "AgustinaTossi 11/11/2017 16:54",
-		"testPlayerCannotPlayIfItsNotHisTurn" : "AgustinaTossi 11/11/2017 16:54",
-		"testGameCannotBePlayedWhenStateIsntActive" : "AgustinaTossi 11/11/2017 16:53",
-		"testWinnerCantBeReturnedWhilePlaying" : "AgustinaTossi 11/15/2017 19:36",
-		"testPlayingUntilWinningWithOneDice" : "AgustinaTossi 11/11/2017 16:54",
-		"testPlayingUntilWinningWithTwoDice" : "AgustinaTossi 11/11/2017 16:54",
-		"testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded" : "AgustinaTossi 11/11/2017 16:55",
-		"testWhenTimesToWinIsLowerThanZeroErrorOccurs" : "SebastianCalderone 11/8/2017 21:18"
+		"testPlayersAreCorrectedAddedToGame" : "SebastianCalderone 12/4/2017 19:28",
+		"testWhenGameIsCreatedEachPlayerHasTwoCards" : "SebastianCalderone 12/4/2017 19:33",
+		"testSuccessOnGameCreation" : "SebastianCalderone 12/4/2017 19:29",
+		"testPlayerCannotPlayIfItsNotHisTurn" : "SebastianCalderone 12/4/2017 19:28",
+		"testGameCannotBePlayedWhenStateIsntActive" : "SebastianCalderone 12/4/2017 19:26",
+		"testWinnerCantBeReturnedWhilePlaying" : "SebastianCalderone 12/4/2017 19:34",
+		"testPlayingUntilWinningWithOneDice" : "SebastianCalderone 12/4/2017 19:29",
+		"testPlayingUntilWinningWithTwoDice" : "SebastianCalderone 12/4/2017 19:29",
+		"testWhenPlayerReachesRoundsForWinningTheStateOfTheGameIsEnded" : "SebastianCalderone 12/4/2017 19:34",
+		"testWhenTimesToWinIsLowerThanZeroErrorOccurs" : "SebastianCalderone 12/4/2017 19:34"
 	},
 	"class" : { }
 }

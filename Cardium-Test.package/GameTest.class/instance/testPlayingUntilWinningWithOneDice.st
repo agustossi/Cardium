@@ -1,8 +1,11 @@
 tests
 testPlayingUntilWinningWithOneDice
-	| game seba board dice dice1 agus totalPlayers aEffectlesTile boardGenerator generator |
-	seba := Player named: 'sebastian'.
-	agus := Player named: 'agustina'.
+	| game seba board dice dice1 agus totalPlayers aEffectlesTile boardGenerator generator cards deckGenerator |
+	cards:= OrderedCollection new.
+	cards add: (Speed new).
+	deckGenerator:= DeckFixedGenerator using: cards.
+	seba := Player named: 'sebastian' calculatingDeckWith: deckGenerator.
+	agus := Player named: 'agustina' calculatingDeckWith: deckGenerator.
 	aEffectlesTile := Effectles new.
 	boardGenerator := TileFixedGenerator using: aEffectlesTile.
 	board := Board ofSize: 10 withThisGenerator: boardGenerator.
@@ -17,7 +20,12 @@ testPlayingUntilWinningWithOneDice
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	self assert: (game positionOf: seba) tiles equals: 0.
 	self assert: (game positionOf: agus) tiles equals: 0.
 	self assert: (game positionOf: seba) rounds equals: 0.
@@ -27,35 +35,29 @@ testPlayingUntilWinningWithOneDice
 	self assert: (game positionOf: agus) tiles equals: 0.
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.
-	self assert: game isActive.
 	game nextTurn: agus.
 	self assert: (game positionOf: seba) tiles equals: 1.
 	self assert: (game positionOf: agus) tiles equals: 2.
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.
-	self assert: game isActive.
 	game nextTurn: seba.
 	self assert: (game positionOf: seba) tiles equals: 4.
 	self assert: (game positionOf: agus) tiles equals: 2.
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.
-	self assert: game isActive.
 	game nextTurn: agus.
 	self assert: (game positionOf: seba) tiles equals: 4.
 	self assert: (game positionOf: agus) tiles equals: 6.
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.
-	self assert: game isActive.
 	game nextTurn: seba.
 	self assert: (game positionOf: seba) tiles equals: 9.
 	self assert: (game positionOf: agus) tiles equals: 6.
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 0.
-	self assert: game isActive.
 	game nextTurn: agus.
 	self assert: (game positionOf: seba) tiles equals: 9.
 	self assert: (game positionOf: agus) tiles equals: 2.
 	self assert: (game positionOf: seba) rounds equals: 0.
 	self assert: (game positionOf: agus) rounds equals: 1.
-	self deny: game isActive.
 	self assert: game winnerOfTheGame equals: agus

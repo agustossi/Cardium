@@ -1,5 +1,5 @@
 action
 undoTheLastPlayOn: aGame of: aPlayer 
 	
-	aGame removeLastDecksCardOf: aPlayer.
+	aPlayer removeLastCardFromDeck.	
 	aGame addLastTile: (UndoEffect new).

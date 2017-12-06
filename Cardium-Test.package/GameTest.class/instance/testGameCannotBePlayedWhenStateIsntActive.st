@@ -1,9 +1,12 @@
 tests
 testGameCannotBePlayedWhenStateIsntActive
-	| game board dice dice1 totalPlayers pepito seba agus generator boardGenerator aEffectlesTile |
-	pepito := Player named: 'Pepito'.
-	seba := Player named: 'Agus'.
-	agus := Player named: 'Seba'.
+	| game board dice dice1 totalPlayers pepito seba agus generator boardGenerator aEffectlesTile deckGenerator cards |
+	cards:= OrderedCollection new.
+	cards add: (Speed new).
+	deckGenerator:= DeckFixedGenerator using: cards.
+	pepito := Player named: 'Pepito' calculatingDeckWith: deckGenerator.
+	seba := Player named: 'Agus' calculatingDeckWith: deckGenerator.
+	agus := Player named: 'Seba' calculatingDeckWith: deckGenerator.
 	totalPlayers := OrderedCollection new.
 	totalPlayers add: pepito.
 	totalPlayers add: seba.
@@ -19,7 +22,12 @@ testGameCannotBePlayedWhenStateIsntActive
 		playedBy: totalPlayers
 		withThisBoard: board
 		usingDice: dice
-		withThis: (DeckFixedGenerator using: ((OrderedCollection new) add: (Speed new); yourself)).
+		withThis:
+			(DeckFixedGenerator
+				using:
+					(OrderedCollection new
+						add: Speed new;
+						yourself)).
 	game nextTurn: pepito.
 	self
 		should: [ game nextTurn: seba ]

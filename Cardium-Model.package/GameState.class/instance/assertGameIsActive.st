@@ -1,0 +1,3 @@
+asserting
+assertGameIsActive
+	^ self subclassResponsibility.
